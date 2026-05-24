@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Centralized Recipe Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen">
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-emerald-600 mb-2">🍽️ Recipe Hub</h1>
+            <p class="text-gray-600">A centralized collection of my favorite video recipes</p>
+        </header>
+
+        <section class="mb-8">
+            <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">Filter by Ingredient / Category:</h2>
+            <div id="filter-buttons" class="flex flex-wrap gap-2">
+                <button onclick="filterRecipes('All')" class="px-4 py-2 rounded-full bg-emerald-600 text-white font-medium text-sm transition shadow-sm hover:bg-emerald-700">All</button>
+                </div>
+        </section>
+
+        <main id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            </main>
+    </div>
+
+    <script src="recipes.js"></script>
+    
+    <script>
+        // 1. Gather all unique tags from the data to build filter buttons dynamically
+        const allTags = new Set();
+        recipeData.forEach(recipe => recipe.tags.forEach(tag => allTags.add(tag)));
+        
+        const buttonContainer = document.getElementById('filter-buttons');
+        Array.from(allTags).sort().forEach(tag => {
+            const btn = document.createElement('button');
+            btn.innerText = tag;
+            btn.className = "px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium text-sm transition hover:bg-gray-100 shadow-sm";
+            btn.onclick = () => filterRecipes(tag, btn);
+            buttonContainer.appendChild(btn);
+        });
+
+        // 2. Function to display the cards
+        function renderRecipes(recipes) {
+            const grid = document.getElementById('recipes-grid');
+            grid.innerHTML = ''; // Clear previous elements
+
+            recipes.forEach(recipe => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-5 flex flex-col justify-between transition transform hover:-translate-y-1 hover:shadow-lg";
+                
+                // Build tags HTML string
+                const tagsHTML = recipe.tags.map(t => `<span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-md font-medium">${t}</span>`).join(' ');
+
+                card.innerHTML = `
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">${recipe.name}</h3>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            ${tagsHTML}
+                        </div>
+                    </div>
+                    <a href="${recipe.link}" target="_blank" class="w-full text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold py-2 px-4 rounded-lg transition text-sm flex items-center justify-center gap-2">
+                        <span>📺 Watch Video</span>
+                    </a>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 3. Filtering Logic
+        function filterRecipes(tag, activeBtn) {
+            // Update button styles to show which one is selected
+            const buttons = buttonContainer.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.className = "px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium text-sm transition hover:bg-gray-100 shadow-sm";
+            });
+            
+            if (tag === 'All') {
+                buttons[0].className = "px-4 py-2 rounded-full bg-emerald-600 text-white font-medium text-sm transition shadow-sm hover:bg-emerald-700";
+                renderRecipes(recipeData);
+            } else {
+                if (activeBtn) {
+                    activeBtn.className = "px-4 py-2 rounded-full bg-emerald-600 text-white font-medium text-sm transition shadow-sm hover:bg-emerald-700";
+                }
+                const filtered = recipeData.filter(recipe => recipe.tags.includes(tag));
+                renderRecipes(filtered);
+            }
+        }
+
+        // Initial render on page load
+        renderRecipes(recipeData);
+    </script>
+</body>
+</html>
