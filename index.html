@@ -93,11 +93,12 @@
             });
 
             if (filteredRecipes.length === 0) {
-                grid.classList.add('hidden');
+                grid.className = "hidden"; // Hide the grid entirely
                 emptyState.classList.remove('hidden');
                 return;
             } else {
-                grid.classList.remove('hidden');
+                // Explicitly ensure the grid uses layout styling when showing recipes
+                grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start";
                 emptyState.classList.add('hidden');
             }
 
@@ -249,6 +250,9 @@
                 btnText.innerText = "Show Filter Provisions";
             }
         }
+
+        // Run the initial print immediately on startup
+        renderRecipes();
     </script>
 </body>
 </html>
