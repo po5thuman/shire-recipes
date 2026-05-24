@@ -104,14 +104,27 @@
                     ? recipe.ingredients.map(ing => `<li class="flex items-center gap-2">🌿 ${ing}</li>`).join('')
                     : '<li>No ingredients listed.</li>';
 
+                // Video Logic Section
                 let videoEmbedHTML = '';
-                if (recipe.link.includes('youtube.com/watch') || recipe.link.includes('youtu.be/')) {
+                
+                if (recipe.embedUrl) {
+                    // 1. Direct Embed Priority (Your Facebook Iframe URL)
+                    videoEmbedHTML = `
+                        <div class="mt-4">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Recipe Video:</h4>
+                            <div class="flex justify-center rounded-lg overflow-hidden bg-stone-50 border border-stone-200 p-2">
+                                <iframe src="${recipe.embedUrl}" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                        </div>`;
+                } else if (recipe.link.includes('youtube.com/watch') || recipe.link.includes('youtu.be/')) {
+                    // 2. YouTube Auto-Embed Fallback
                     let videoId = recipe.link.includes('youtu.be/') ? recipe.link.split('/').pop() : new URL(recipe.link).searchParams.get('v');
                     videoEmbedHTML = `
                         <div class="mt-4 rounded-lg overflow-hidden border border-stone-200 aspect-video">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
                         </div>`;
                 } else {
+                    // 3. Fallback link button for items without explicit embedUrls
                     videoEmbedHTML = `
                         <div class="mt-4">
                             <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-1.5">Recipe Video:</h4>
@@ -164,7 +177,7 @@
             renderRecipes();
         }
 
-        // 4. Update the visual filter chips
+        // 4. Update visual chips
         function updateChipsBar() {
             const bar = document.getElementById('active-chips-bar');
             const container = document.getElementById('chips-container');
@@ -187,13 +200,11 @@
             });
         }
 
-        // Remove single chip logic
         function removeSingleChip(tag) {
             document.getElementById(`check-${tag}`).checked = false;
             toggleTagFilter(tag);
         }
 
-        // Clear all logic
         function clearAllFilters() {
             selectedTags.forEach(tag => {
                 document.getElementById(`check-${tag}`).checked = false;
