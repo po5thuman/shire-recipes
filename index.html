@@ -57,6 +57,28 @@
                     ? recipe.ingredients.map(ing => `<li class="flex items-center gap-2">🔹 ${ing}</li>`).join('')
                     : '<li>No ingredients listed.</li>';
 
+                // Check if it's a standard YouTube link for true embedding, otherwise use a video preview block
+                let videoEmbedHTML = '';
+                if (recipe.link.includes('youtube.com/watch') || recipe.link.includes('youtu.be/')) {
+                    // Extract YouTube Video ID
+                    let videoId = recipe.link.includes('youtu.be/') ? recipe.link.split('/').pop() : new URL(recipe.link).searchParams.get('v');
+                    videoEmbedHTML = `
+                        <div class="mt-4 rounded-lg overflow-hidden border border-gray-200 aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                        </div>`;
+                } else {
+                    // Modern placeholder link card for Facebook/Instagram links that cannot be standard embedded
+                    videoEmbedHTML = `
+                        <div class="mt-4">
+                            <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Recipe Video:</h4>
+                            <a href="${recipe.link}" target="_blank" class="group/video block relative rounded-lg overflow-hidden border border-dashed border-emerald-300 bg-emerald-50/50 p-4 text-center transition hover:bg-emerald-50 hover:border-emerald-400">
+                                <div class="text-2xl mb-1">🎬</div>
+                                <span class="text-xs font-semibold text-emerald-700 block group-hover/video:underline">Watch Tutorial Reel</span>
+                                <span class="text-[10px] text-gray-400 block mt-0.5">Opens clip in a new tab</span>
+                            </a>
+                        </div>`;
+                }
+
                 card.innerHTML = `
                     <div>
                         <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-gray-900 text-lg mb-2 flex justify-between items-center group focus:outline-none">
@@ -64,26 +86,25 @@
                             <span id="arrow-${index}" class="text-gray-400 transition-transform duration-200 text-sm">▼</span>
                         </button>
                         
-                        <div class="flex flex-wrap gap-1.5 mb-4">
+                        <div class="flex flex-wrap gap-1.5 mb-2">
                             ${tagsHTML}
                         </div>
 
-                        <div id="ingredients-${index}" class="hidden border-t border-gray-100 pt-3 mt-2 mb-4">
+                        <div id="ingredients-${index}" class="hidden border-t border-gray-100 pt-3 mt-3">
                             <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Ingredients:</h4>
-                            <ul class="text-sm text-gray-600 space-y-1">
+                            <ul class="text-sm text-gray-600 space-y-1 mb-2">
                                 ${ingredientsHTML}
                             </ul>
+                            
+                            ${videoEmbedHTML}
                         </div>
                     </div>
-                    <a href="${recipe.link}" target="_blank" class="w-full text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold py-2 px-4 rounded-lg transition text-sm flex items-center justify-center gap-2">
-                        <span>📺 Watch Video</span>
-                    </a>
                 `;
                 grid.appendChild(card);
             });
         }
 
-        // 4. Toggle Dropdown Function
+        // 3. Toggle Dropdown Function
         function toggleIngredients(index) {
             const panel = document.getElementById(`ingredients-${index}`);
             const arrow = document.getElementById(`arrow-${index}`);
@@ -97,7 +118,7 @@
             }
         }
 
-        // 3. Filtering Logic
+        // 4. Filtering Logic
         function filterRecipes(tag, activeBtn) {
             const buttons = buttonContainer.querySelectorAll('button');
             buttons.forEach(btn => {
