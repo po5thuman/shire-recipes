@@ -9,8 +9,8 @@
 <body class="bg-stone-50 text-stone-800 font-sans min-h-screen">
 
     <header class="text-center pt-10 pb-4 max-w-7xl mx-auto px-4">
-        <h1 class="text-4xl font-extrabold text-emerald-800 mb-2 tracking-wide font-serif">🏡 The Shire</h1>
-        <p class="text-stone-600 italic font-medium">"One cookbook to rule them all, for Breakfast, Second Breakfast, and Elevenses."</p>
+        <h1 class="text-4xl font-extrabold text-emerald-800 mb-2 tracking-wide">🏡 The Shire</h1>
+        <p class="text-stone-600 font-medium">"One cookbook to rule them all, for Breakfast, Second Breakfast, and Elevenses."</p>
     </header>
 
     <div class="max-w-7xl mx-auto px-4 pb-8 flex flex-col md:flex-row gap-8">
@@ -125,7 +125,7 @@
 
                 card.innerHTML = `
                     <div>
-                        <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 text-lg mb-2 flex justify-between items-center group focus:outline-none font-serif">
+                        <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 text-lg mb-2 flex justify-between items-center group focus:outline-none">
                             <span class="group-hover:text-emerald-800 transition">${recipe.name}</span>
                             <span id="arrow-${index}" class="text-stone-400 transition-transform duration-200 text-sm">▼</span>
                         </button>
@@ -187,11 +187,13 @@
             });
         }
 
+        // Remove single chip logic
         function removeSingleChip(tag) {
             document.getElementById(`check-${tag}`).checked = false;
             toggleTagFilter(tag);
         }
 
+        // Clear all logic
         function clearAllFilters() {
             selectedTags.forEach(tag => {
                 document.getElementById(`check-${tag}`).checked = false;
