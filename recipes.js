@@ -23,7 +23,7 @@ const recipeData = [
     name: "Smashed Potato Salad",
     link: "https://www.facebook.com/share/r/19dUEAifSM/",
     tags: ["Potato", "Salad"],
-    ingredients: ["Potatoes, Olive Oil, Salt & Pepper, Yoghurt, Mayonnaise, Lemon Juice, Dill, Parsley, Chives, Red Onion, Cucumber"],
+    ingredients: ["Potatoes", "Olive Oil", "Salt & Pepper", "Yoghurt", "Mayonnaise", "Lemon Juice", "Dill", "Parsley", "Chives", "Red Onion", "Cucumber"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046748107390770%2F&show_text=false&width=267&t=0"
   },
   {
