@@ -29,7 +29,7 @@ const recipeData = [
   {
     name: "Borani",
     link: "https://www.facebook.com/reel/944165787786671/",
-    tags: ["Aubergine],
+    tags: ["Aubergine"],
     ingredients: ["Aubergine", "Garlic", "Chick Peas", "Tomato Passata", "Spices", "Water", "Salt", "Sundried Tomatoes", "Greek Yoghurt", "Lemon Juice", "Dill", "Parsley"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F944165787786671%2F&show_text=false&width=267&t=0"
   },
