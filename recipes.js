@@ -2,8 +2,9 @@ const recipeData = [
   {
     name: "Roasted Zucchini w/Garlic Sauce",
     link: "https://www.facebook.com/share/r/1CjtfmMvH1/",
-    tags: ["Zucchini", "Garlic", "Sides"],
-    ingredients: ["Zucchini", "Garlic", "Olive oil", "Greek yogurt", "Herbs"]
+    tags: ["Zucchini"],
+    ingredients: ["Zucchini", "Garlic", "Olive oil", "Greek yogurt", "Herbs"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1690375315067660%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Aubergine Lasagna",
