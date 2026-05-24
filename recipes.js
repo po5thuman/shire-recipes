@@ -10,9 +10,8 @@ const recipeData = [
     name: "Aubergine Lasagna",
     link: "https://www.facebook.com/share/r/16sxgB97QZ/",
     tags: ["Aubergine"],
-    ingredients: ["2 aubergines" , "garlic", "olive oil", "salt & pepper", "red onion", "1 tsp smoked paprika", "sundried tomatoes", "2 tbsp tomato purée", "1 tbsp balsamic vinegar", "2 x 400g tins plum tomatoes", "250g cooked puy lentils", "200ml water", "100g walnuts", "10g fresh oregano", "150ml plant-based cream", "8 dried lasagna sheets", "100g plant-based cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F739135525130359%2F&show_text=false&width=267&t=0"
-  },
+    ingredients: ["2 aubergines" , "garlic", "olive oil", "salt & pepper", "red onion", "1 tsp smoked paprika", "sundried tomatoes", "2 tbsp tomato purée", "1 tbsp balsamic vinegar", "2 x 400g tins plum tomatoes", "250g cooked puy lentils", "200ml water", "100g walnuts", "10g fresh oregano", "150ml plant-based cream", "8 dried lasagna sheets", "100g plant-based cheese"]
+    },
   {
     name: "Quinoa Salad",
     link: "https://www.facebook.com/reel/1006490817927173/",
@@ -24,7 +23,8 @@ const recipeData = [
     name: "Smashed Potato Salad",
     link: "https://www.facebook.com/share/r/19dUEAifSM/",
     tags: ["Potato", "Salad"],
-    ingredients: ["Baby potatoes", "Mayonnaise or Yogurt", "Chives", "Mustard"]
+    ingredients: ["Potatoes, Olive Oil, Salt & Pepper, Yoghurt, Mayonnaise, Lemon Juice, Dill, Parsley, Chives, Red Onion, Cucumber"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046748107390770%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Borani",
