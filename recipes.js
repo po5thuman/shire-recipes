@@ -37,7 +37,8 @@ const recipeData = [
     name: "Zucchini Pasta",
     link: "https://www.facebook.com/share/r/14DZfpZZKGz/",
     tags: ["Zucchini", "Pasta"],
-    ingredients: ["Zucchini spaghetti", "Garlic", "Parmesan", "Olive oil", "Chili flakes"]
+    ingredients: ["Zucchini", "Onion", "Seasoning", "Olive Oil", "Cream Cheese", "Garlic", "Parmegian", "Basil", "Pasta Water", "Cooked Pasta"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F948013213951487%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Aubergine & Quinoa Bowl",
