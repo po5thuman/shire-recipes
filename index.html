@@ -13,9 +13,16 @@
         <p class="text-stone-600 font-medium">"One cookbook to rule them all, for Breakfast, Second Breakfast, and Elevenses."</p>
     </header>
 
+    <div class="max-w-7xl mx-auto px-4 mb-4 md:hidden">
+        <button onclick="toggleMobileFilters()" class="w-full flex items-center justify-center gap-2 bg-emerald-800 hover:bg-emerald-900 text-white font-semibold py-2.5 px-4 rounded-xl shadow-sm transition">
+            <span>🔍</span>
+            <span id="mobile-filter-btn-text">Show Filter Provisions</span>
+        </button>
+    </div>
+
     <div class="max-w-7xl mx-auto px-4 pb-8 flex flex-col md:flex-row gap-8">
         
-        <aside class="w-full md:w-64 shrink-0 bg-white rounded-xl shadow-sm border border-stone-200/60 p-5 self-start">
+        <aside id="filter-sidebar" class="hidden md:block w-full md:w-64 shrink-0 bg-white rounded-xl shadow-sm border border-stone-200/60 p-5 self-start">
             <section>
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="text-xs font-bold uppercase tracking-wider text-stone-400">Filter Provisions:</h2>
@@ -104,11 +111,8 @@
                     ? recipe.ingredients.map(ing => `<li class="flex items-center gap-2">🌿 ${ing}</li>`).join('')
                     : '<li>No ingredients listed.</li>';
 
-                // Video Logic Section
                 let videoEmbedHTML = '';
-                
                 if (recipe.embedUrl) {
-                    // 1. Direct Embed Priority (Your Facebook Iframe URL)
                     videoEmbedHTML = `
                         <div class="mt-4">
                             <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Recipe Video:</h4>
@@ -117,14 +121,12 @@
                             </div>
                         </div>`;
                 } else if (recipe.link.includes('youtube.com/watch') || recipe.link.includes('youtu.be/')) {
-                    // 2. YouTube Auto-Embed Fallback
                     let videoId = recipe.link.includes('youtu.be/') ? recipe.link.split('/').pop() : new URL(recipe.link).searchParams.get('v');
                     videoEmbedHTML = `
                         <div class="mt-4 rounded-lg overflow-hidden border border-stone-200 aspect-video">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
                         </div>`;
                 } else {
-                    // 3. Fallback link button for items without explicit embedUrls
                     videoEmbedHTML = `
                         <div class="mt-4">
                             <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-1.5">Recipe Video:</h4>
@@ -234,8 +236,19 @@
             }
         }
 
-        // Initial launch
-        renderRecipes();
+        // 6. Mobile Drawer Toggle Logic
+        function toggleMobileFilters() {
+            const sidebar = document.getElementById('filter-sidebar');
+            const btnText = document.getElementById('mobile-filter-btn-text');
+            
+            if (sidebar.classList.contains('hidden')) {
+                sidebar.classList.remove('hidden');
+                btnText.innerText = "Hide Filter Provisions";
+            } else {
+                sidebar.classList.add('hidden');
+                btnText.innerText = "Show Filter Provisions";
+            }
+        }
     </script>
 </body>
 </html>
