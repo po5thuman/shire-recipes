@@ -1,6 +1,6 @@
 const recipeData = [
   {
-    name: "Roasted Zucchini w/Garlic Sauce",
+    name: "Roasted Zucchini",
     link: "https://www.facebook.com/share/r/1CjtfmMvH1/",
     tags: ["Zucchini"],
     ingredients: ["Zucchini", "Garlic", "Olive oil", "Greek yogurt", "Feta Cheese"],
@@ -18,7 +18,7 @@ const recipeData = [
     link: "https://www.facebook.com/reel/1006490817927173/",
     tags: ["Quinoa, Aubergine"],
     ingredients: ["Aubergine", "Cherry Tomatoes", "Garlic", "Salt & Pepper", "Olive Oil", "Quinoa", "Lentils", "Jarred Pepper", "Sundried Tomatoes", "Cashews", "Lemon Juice"],
-    emberUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1006490817927173%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1006490817927173%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Smashed Potato Salad",
