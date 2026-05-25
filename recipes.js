@@ -57,7 +57,7 @@ const recipeData = [
   {
     name: "Pan Roast with Creamy Garlic & Feta Sauce",
     link: "https://www.facebook.com/reel/791181089862992",
-    tags: ["Potatoes", "Zucchini", "Ball Pepper"],
+    tags: ["Potatoes", "Zucchini", "Bell Pepper"],
     ingredients: ["Potato", "Zucchini", "Red Bell Pepper", "Chick Peas", "Garlic", "Salt & Pepper", "Olive Oil", "Yogurt", "Feta Cheese", "Sundried Tomato", "Bell Pepper", "Parsley", "Lemon Juice"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791181089862992%2F&show_text=false&width=267&t=0"
   },
@@ -147,7 +147,7 @@ const recipeData = [
   {
     name: "Zaalouk",
     link: "https://www.facebook.com/reel/1012198027387914",
-    tags: ["Aubergine"],
+    tags: ["Aubergine", "Bell Pepper"],
     ingredients: ["4 Aubergines", "3 Bell Peppers", "Garlic", "3 Tomatoes", "Chillies", "Olive Oil", "Salt", "Cumin Powder", "Parsley"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1012198027387914%2F&show_text=false&width=267&t=0"
   },
@@ -162,7 +162,7 @@ const recipeData = [
     name: "Za'Atar Broccoli with Red Pepper Sauce",
     link: "https://www.facebook.com/reel/2160819401066413",
     tags: ["Broccoli"],
-    ingredients: ["Broccoli", "Olive Oil", "Spices", "Salt & Pepper", "Walnuts", "Cumin Seeds", "Ball Pepper", "Lemon Juice", "Garlic", "Tomato Paste"],
+    ingredients: ["Broccoli", "Olive Oil", "Spices", "Salt & Pepper", "Walnuts", "Cumin Seeds", "Bell Pepper", "Lemon Juice", "Garlic", "Tomato Paste"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2160819401066413%2F&show_text=false&width=267&t=0"
   },
   {
@@ -197,7 +197,7 @@ const recipeData = [
     name: "Dragon Tofu",
     link: "https://www.facebook.com/reel/1247205270759892",
     tags: ["Tofu"],
-    ingredients: ["Tofu", "Salt & Pepper", "1 Egg", "Cornflour", "Green/Red/Orange Ball Peppers", "Garlic", "Ginger", "Onion", "Cashew Nuts", "Ketchup", "Soy Sauce", "Red Chilli Sauce", "Honey", "Spring Onion"],
+    ingredients: ["Tofu", "Salt & Pepper", "1 Egg", "Cornflour", "Green/Red/Orange Bell Peppers", "Garlic", "Ginger", "Onion", "Cashew Nuts", "Ketchup", "Soy Sauce", "Red Chilli Sauce", "Honey", "Spring Onion"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fnotacookofficial%2Fvideos%2F1247205270759892%2F&show_text=false&width=267&t=0"
   },
   {
@@ -252,7 +252,7 @@ const recipeData = [
   {
     name: "Chickpea Soup",
     link: "https://www.facebook.com/share/r/1BFL1Z59xJ/",
-    tags: ["Soup", "Chickpea"],
+    tags: ["Soup", "Chickpea", "Bell Pepper"],
     ingredients: ["45g Cashews", "180ml Soy Milk", "30g Nutritional Yeast", "Olive Oil", "2 Onions", "2 Carrots", "1 Red Bell Pepper", "85g Sundried Tomatoes", "Garlic", "85g Tomato Paste", "490g Chickpeas", "1200ml Vegetable Broth", "250g Gnocchi", "Parsley", "Basil", "Spinach", "Lemon Juice", "Smoked Paprika", "Garlic Powder", "Dried Thyme", "Chili Flakes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F854383547652526%2F&show_text=false&width=267&t=0"
   },
