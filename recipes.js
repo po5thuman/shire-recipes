@@ -80,7 +80,6 @@ const recipeData = [
     link: "https://www.facebook.com/reel/1303730294383083",
     tags: ["Butter Beans", "Dip"],
     ingredients: ["Carrots", "Butter Beans", "Ground Turmeric", "Cumin Seeds", " Smoked Paprika", "Garlic", "Olive Oil", "Tahini", "Lemon Juice", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1303730294383083%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Roasted Vegetables",
@@ -155,7 +154,7 @@ const recipeData = [
   {
     name: "Shish Andaz",
     link: "https://www.facebook.com/reel/24912473575011901",
-    tags: ["Aubergines"],
+    tags: ["Aubergine"],
     ingredients: ["3 Aubergines", "Salt & Pepper", "Olive Oil", "Onion", "300g Walnuts", "Cinnamon", "1/2 tsp Turmeric", "Tomato Paste", "4 tbsp Pomegranate Molasses", "Ice Cubes", "Cooked Rice"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24912473575011901%2F&show_text=false&width=267&t=0"
   },
