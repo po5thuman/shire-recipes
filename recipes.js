@@ -84,7 +84,7 @@ const recipeData = [
   {
     name: "Roasted Vegetables",
     link: "https://www.facebook.com/reel/8951782511536323",
-    tags: ["Broccoli", "Caulifloweer"],
+    tags: ["Broccoli", "Cauliflower"],
     ingredients: ["Broccoli", "Caulifloweer", "Onion", "Sweet Potato", "Chickpeas", "Seasoning", "Olive Oil", "Yogurt", "Tahini", "Mustard", "Lemon Juice", "Garlic", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F8951782511536323%2F&show_text=false&width=267&t=0"
   },
