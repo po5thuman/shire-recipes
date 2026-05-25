@@ -227,5 +227,75 @@ const recipeData = [
     tags: ["Bulgur"],
     ingredients: ["400g Brown Bulgur", "3 Large Tomatoes", "1 Large Onnion", "Garlic", " 125g Walnuts", "1 tbsp Tomato Paste", "2 tbsp Mild Red Pepper Paste", "1 tbsp Chilli Flakes", "1 tbsp Isot Pepper", "1 tsp Cumin Powder", "1 tsp Baharat", "Salt & Pepper", "120g Pomegranate Molasses", "120g Olive Oil", "1/2 Lettuce", "1 Lemon"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2021740858657674%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Cheesy Lentil Vegetable Pie",
+    link: "https://www.facebook.com/reel/935457789172550",
+    tags: ["Red Lentils", "Zucchini"],
+    ingredients: ["Olive Oil", "Onion", "Carrot", "200g Zucchini", "Garlic", "200g Red Lentils", "600ml Vegetable Broth", "112g Shredded Mozzarella", "30g Breadcrumbs", "Salt & Pepper", "1 tbs Parmesan Cheese", "Chili Pepper Flakes"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F935457789172550%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Baked Oats Cake",
+    link: "https://www.facebook.com/reel/1817084158984624",
+    tags: ["Oats", "Dessert"],
+    ingredients: ["60g Oats", "50g Grated Carrots", "200g Greek Yogurt", "2 Eggs", "1/2 tsp Baking Powder", "1 tsp Cinnamon", "1 tbsp Agave Syrup", "Almond Flakes"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Raw Carrot Cake Squares",
+    link: "https://www.facebook.com/share/r/1EMrsjmVV3/",
+    tags: ["Dessert", "Carrots", "Oats"],
+    ingredients: ["2 Medium Carrots", "2/3 Cup Dates", "1 1/2 Cup Oats", "1/2 Cup Coconut Flakes", "1 Cup Walnuts", "2 tsp Cinnamon", "1/4 tsp Nutmeg", "1/4 tsp Ginger", "1 tsp Vanilla Extract", "2 tbsp Plant Milk", "1 Cup Cashews (soaked for min. 2 hours)", "1 tbsp Lemon Juice", "1 tsp Vanilla Extract", "4 Dates", "1/4 cup + 2 tbsp Plant Milk"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F906738255542215%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Chickpea Soup",
+    link: "https://www.facebook.com/share/r/1BFL1Z59xJ/",
+    tags: ["Soup", "Chickpea"],
+    ingredients: ["45g Cashews", "180ml Soy Milk", "30g Nutritional Yeast", "Olive Oil", "2 Onions", "2 Carrots", "1 Red Bell Pepper", "85g Sundried Tomatoes", "Garlic", "85g Tomato Paste", "490g Chickpeas", "1200ml Vegetable Broth", "250g Gnocchi", "Parsley", "Basil", "Spinach", "Lemon Juice", "Smoked Paprika", "Garlic Powder", "Dried Thyme", "Chili Flakes"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F854383547652526%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Marry Me Chickpeas",
+    link: "https://www.facebook.com/share/r/1C2PC33UgU/",
+    tags: ["Chickpeas"],
+    ingredients: ["Olive Oil", "1 Onion", "1 Red Bell Pepper", "14g Sundried Tomatoes", "Garlic", "Tomato Paste", "1/2 Red Chili Flakes", "1 tsp Mixed Herbs", "1 tsp Smoked Papriks", "16g Cashews", "295ml Soy Milk", "15g Nutritional Yeast", "1 Can Chickpeas", "Spinach", "Lemon Juice", "Basil", "Salt & Pepper"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1337456481572728%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Potato & Zucchini Cheese Bake",
+    link: "https://www.facebook.com/share/r/1EGWVdCViY/",
+    tags: ["Zucchini", "Potatoes"],
+    ingredients: ["3 Potatoes", "2 Zucchini", "60g Cheddar Cheese", "3 tbsp Breadcrumbs", "3 Eggs", "Salt", "Paprika", "Herbs", "Olive Oil"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2395499890862220%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Sweet Potato & Broccoli Quiche",
+    link: "https://www.facebook.com/share/r/1GPyXbdSdV/",
+    tags: ["Broccoli", "Sweet Potato", "Quiche"],
+    ingredients: ["3 Small Sweet Potatoes", "8–10 small broccoli florets (cooked)", "100g Cheese (for the base)", "150g Cottage Cheese", "1 Red Pointed Pepper", "Red Onion", "100g Cheese (for topping)", "Olive oil", "Salt & Pepper", "Herbs"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1455917635911982%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Roasted Broccoli Salad",
+    link: "https://www.facebook.com/share/r/1FsDW6Xh9u/",
+    tags: ["Broccoli", "Chickpeas"],
+    ingredients: ["3 Heads Broccoli", "Olive Oil", "Salt & Pepper", "3 Cups Kale", "Red Onion", "Tahini", "Water", "3 Dates", "Lemon Juice", "Lemon Zest", "Balsamic Vinegar", "Oregano", "1 Can Chickpeas", "Parmesan Cheese", "1/2 tsp Paprika", "1/2 tsp Garlic Powder", "1/4 cup Cashews", "Fresh Dill", "Scallions"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1438519084404658%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Potato & Vegetable Quiche",
+    link: "https://www.facebook.com/share/r/17UWWrqbAd/",
+    tags: ["Potatoes"],
+    ingredients: ["6–7 Medium Potatoes", "Salt", "Olive Oil", "200g Grated Cheese", "200g Spinach", "10 Cherry Tomatoes", "Red Onion", "100g Feta Cheese", "120ml Oat Cream", "80ml Hollandaise"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2097992227436928%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "One Pot Lentils",
+    link: "https://www.facebook.com/share/r/18aBLW3Xhp/",
+    tags: ["Black Lentils"],
+    ingredients: ["Shallots", "Garlic", "Cumin", "Paprika", "Canned Lentils", "Parsley", "Thyme", "Vegetable Broth", "Greek Yogurt"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1304426671089088%2F&show_text=false&width=267&t=0"
   }
 ];
