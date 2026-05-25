@@ -22,7 +22,7 @@ const recipeData = [
   {
     name: "Smashed Potato Salad",
     link: "https://www.facebook.com/share/r/19dUEAifSM/",
-    tags: ["Potato", "Salad"],
+    tags: ["Potatoes", "Salad"],
     ingredients: ["Potatoes", "Olive Oil", "Salt & Pepper", "Yoghurt", "Mayonnaise", "Lemon Juice", "Dill", "Parsley", "Chives", "Red Onion", "Cucumber"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046748107390770%2F&show_text=false&width=267&t=0"
   },
@@ -57,7 +57,7 @@ const recipeData = [
   {
     name: "Pan Roast with Creamy Garlic & Feta Sauce",
     link: "https://www.facebook.com/reel/791181089862992",
-    tags: ["Potato", "Zucchini", "Ball Pepper"],
+    tags: ["Potatoes", "Zucchini", "Ball Pepper"],
     ingredients: ["Potato", "Zucchini", "Red Bell Pepper", "Chick Peas", "Garlic", "Salt & Pepper", "Olive Oil", "Yogurt", "Feta Cheese", "Sundried Tomato", "Bell Pepper", "Parsley", "Lemon Juice"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791181089862992%2F&show_text=false&width=267&t=0"
   },
