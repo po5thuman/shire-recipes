@@ -275,7 +275,6 @@ const recipeData = [
     link: "https://www.facebook.com/share/r/1GPyXbdSdV/",
     tags: ["Broccoli", "Sweet Potato", "Quiche"],
     ingredients: ["3 Small Sweet Potatoes", "8–10 small broccoli florets (cooked)", "100g Cheese (for the base)", "150g Cottage Cheese", "1 Red Pointed Pepper", "Red Onion", "100g Cheese (for topping)", "Olive oil", "Salt & Pepper", "Herbs"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1455917635911982%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Roasted Broccoli Salad",
@@ -289,14 +288,12 @@ const recipeData = [
     link: "https://www.facebook.com/share/r/17UWWrqbAd/",
     tags: ["Potatoes"],
     ingredients: ["6–7 Medium Potatoes", "Salt", "Olive Oil", "200g Grated Cheese", "200g Spinach", "10 Cherry Tomatoes", "Red Onion", "100g Feta Cheese", "120ml Oat Cream", "80ml Hollandaise"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2097992227436928%2F&show_text=false&width=267&t=0"
   },
   {
     name: "One Pot Lentils",
     link: "https://www.facebook.com/share/r/18aBLW3Xhp/",
     tags: ["Black Lentils"],
     ingredients: ["Shallots", "Garlic", "Cumin", "Paprika", "Canned Lentils", "Parsley", "Thyme", "Vegetable Broth", "Greek Yogurt"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1304426671089088%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Çilbir",
@@ -317,14 +314,12 @@ const recipeData = [
     link: "https://www.facebook.com/share/r/1EKrs4BmXV/",
     tags: ["Sweet Potato"],
     ingredients: ["Sweet Potato", "90g Almond Flour", "1 Egg", "3 tbsp Red Lentils & Tomato Pesto", "Olives"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2148864485849164%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Mercimek Koftesi",
     link: "https://www.facebook.com/reel/1689922655356072/",
     tags: ["Red Lentils"],
     ingredients: ["250g Red Lentils", "550ml Water", "180g Bulgur", "80ml Olive Oil", "Onion", "Tomato Paste", " 1tsp Cumin", "2tsp Paprika", "Salt & Pepper", "Parsley", "Mint", "4 Green Onions", "Lemon Juice", "1 tbsp Pomegranate Molasses", "1 Lettuce Head"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1689922655356072%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Zucchini & Chickpea Salad",
@@ -338,7 +333,6 @@ const recipeData = [
     link: "https://www.facebook.com/share/r/19ZVC8wPTe/",
     tags: ["Butter Beans", "Tofu"],
     ingredients: ["Butter Beans", "Tofu", "Spring Onion", "Soy Sauce", "Breadcrumbs", "Onion", "Garlic", "Garam Masala", "Cream", "Curry Powder", "Lemon Juice", "Black & White Sesame Seeds", "Cooked Rice", "Spicy Oil"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2132901324142589%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Spinach & Feta Puff Pastry Rolls",
@@ -394,12 +388,12 @@ const recipeData = [
     link: "https://www.facebook.com/reel/1017899374132791",
     tags: ["Spinach", "Mushrooms", "Zucchini", "Bake"],
     ingredients: ["2 Zucchini", "Olive Oil", "2 Scallions", "225g Spinach", "Salt & Pepper", "280g Mushrooms", "Garlic Powder", "Onion Powder", "Mozzarella Cheese", "Breadcrumbs", "Parmesan Cheese", "Italian Herbs"],
-    embedUrl: "https://www.facebook.com/reel/1017899374132791"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1017899374132791%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Chickpea Banana Cookies",
     link: "https://www.facebook.com/share/r/1TJagSJgH2/",
-    tags: ["Chickpeas", "Cookies"],
+    tags: ["Chickpeas", "Cookies", "Dessert"],
     ingredients: ["1 & 1/2 Cups Chickpeas", "2 Bananas", "1/3 Cup Maple Syrup", "3 tbsp Peanut Butter", "1 & 1/3 cup Almond Flour", "1 tsp Baking Soda", "1 tsp Vanilla Extract", "Salt", "80g Chocolate"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1505863757908610%2F&show_text=false&width=267&t=0"
   }
