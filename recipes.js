@@ -10,8 +10,8 @@ const recipeData = [
     name: "Aubergine Lasagna",
     link: "https://www.facebook.com/share/r/16sxgB97QZ/",
     tags: ["Aubergine"],
-    ingredients: ["2 aubergines" , "garlic", "olive oil", "salt & pepper", "red onion", "1 tsp smoked paprika", "sundried tomatoes", "2 tbsp tomato purée", "1 tbsp balsamic vinegar", "2 x 400g tins plum tomatoes", "250g cooked puy lentils", "200ml water", "100g walnuts", "10g fresh oregano", "150ml plant-based cream", "8 dried lasagna sheets", "100g plant-based cheese"]
-    },
+    ingredients: ["2 aubergines", "garlic", "olive oil", "salt & pepper", "red onion", "1 tsp smoked paprika", "sundried tomatoes", "2 tbsp tomato purée", "1 tbsp balsamic vinegar", "2 x 400g tins plum tomatoes", "250g cooked puy lentils", "200ml water", "100g walnuts", "10g fresh oregano", "150ml plant-based cream", "8 dried lasagna sheets", "100g plant-based cheese"]
+  },
   {
     name: "Quinoa Salad",
     link: "https://www.facebook.com/reel/1006490817927173/",
@@ -215,7 +215,7 @@ const recipeData = [
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F851767694051900%2F&show_text=false&width=267&t=0"
   },
   {
-    name: "Tavče Gravče",
+    name: "Tavče Gravče",
     link: "https://www.facebook.com/reel/2021740858657674",
     tags: ["Cannellini Beans"],
     ingredients: ["Cannellini Beans", "Salt & Pepper", "2 Onions", "Garlic", "Bay Leaves", "Dried Chillies", "Long Red Peppers", "Olive Oil", "Tomato Paste", "1 tsp Plain Flour", "1 tbsp Sweet Paprika", "Dried Mint"],
@@ -301,14 +301,14 @@ const recipeData = [
   {
     name: "Çilbir",
     link: "https://www.facebook.com/share/r/1bCSfKnMgW/",
-    tags: ["Egga", "Breakfast"],
+    tags: ["Eggs", "Breakfast"],
     ingredients: ["4 Eggs", "350g Yogurt", "Garlic", "40g Butter", "2 tsp Pepper Flakes", "Fresh Dill", "Salt"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1518963022901739%2F&show_text=false&width=267&t=0"
   },
   {
-    name: "",
+    name: "Smoky Crispy Aubergine",
     link: "https://www.facebook.com/reel/2018462482070034",
-    tags: ["Aubergines"],
+    tags: ["Aubergine"],
     ingredients: ["2 Aubergines", "Olive Oil", "Salt", "1 tbsp Paprika", "3/4 tsp Garlic Powder", "1/2 tbsp Honey", "Lemon Juice", "Water"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2018462482070034%2F&show_text=false&width=267&t=0"
   },
@@ -321,7 +321,7 @@ const recipeData = [
   },
   {
     name: "Mercimek Koftesi",
-    link: "Orange Lentils",
+    link: "https://www.facebook.com/reel/1689922655356072/",
     tags: ["Red Lentils"],
     ingredients: ["250g Red Lentils", "550ml Water", "180g Bulgur", "80ml Olive Oil", "Onion", "Tomato Paste", " 1tsp Cumin", "2tsp Paprika", "Salt & Pepper", "Parsley", "Mint", "4 Green Onions", "Lemon Juice", "1 tbsp Pomegranate Molasses", "1 Lettuce Head"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1689922655356072%2F&show_text=false&width=267&t=0"
@@ -399,7 +399,7 @@ const recipeData = [
   {
     name: "Chickpea Banana Cookies",
     link: "https://www.facebook.com/share/r/1TJagSJgH2/",
-    tags: ["Chickpeas", "Cookies""],
+    tags: ["Chickpeas", "Cookies"],
     ingredients: ["1 & 1/2 Cups Chickpeas", "2 Bananas", "1/3 Cup Maple Syrup", "3 tbsp Peanut Butter", "1 & 1/3 cup Almond Flour", "1 tsp Baking Soda", "1 tsp Vanilla Extract", "Salt", "80g Chocolate"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1505863757908610%2F&show_text=false&width=267&t=0"
   }
