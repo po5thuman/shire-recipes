@@ -252,7 +252,7 @@ const recipeData = [
   {
     name: "Chickpea Soup",
     link: "https://www.facebook.com/share/r/1BFL1Z59xJ/",
-    tags: ["Soup", "Chickpea", "Bell Pepper"],
+    tags: ["Soup", "Chickpeas", "Bell Pepper"],
     ingredients: ["45g Cashews", "180ml Soy Milk", "30g Nutritional Yeast", "Olive Oil", "2 Onions", "2 Carrots", "1 Red Bell Pepper", "85g Sundried Tomatoes", "Garlic", "85g Tomato Paste", "490g Chickpeas", "1200ml Vegetable Broth", "250g Gnocchi", "Parsley", "Basil", "Spinach", "Lemon Juice", "Smoked Paprika", "Garlic Powder", "Dried Thyme", "Chili Flakes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F854383547652526%2F&show_text=false&width=267&t=0"
   },
