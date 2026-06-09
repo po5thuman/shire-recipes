@@ -455,7 +455,7 @@ const recipeData = [
   {
     name: "Cheesy Red Pepper Boats",
     link: "https://www.facebook.com/share/r/14f726taY7A/",
-    tags: ["Bell Peppers"],
+    tags: ["Bell Pepper"],
     ingredients: ["5 long red sweet peppers", "100g feta cheese", "100g mozzarella", "100g cream cheese", "2 spring onions", "tomato", "garlic", "basil", "mint", "olive oil", "Salt & Pepper", "Chilli flakes"]
   },
   {
