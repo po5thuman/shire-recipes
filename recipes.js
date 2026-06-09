@@ -396,5 +396,89 @@ const recipeData = [
     tags: ["Chickpeas", "Cookies", "Dessert"],
     ingredients: ["1 & 1/2 Cups Chickpeas", "2 Bananas", "1/3 Cup Maple Syrup", "3 tbsp Peanut Butter", "1 & 1/3 cup Almond Flour", "1 tsp Baking Soda", "1 tsp Vanilla Extract", "Salt", "80g Chocolate"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1505863757908610%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Lentils Salad with Feta",
+    link: "https://www.facebook.com/share/r/1CUmARk4ZB/",
+    tags: ["Salad", "Lentils"],
+    ingredients: ["2 cans lentils", "1 cup dates", "1 cucumber", "3/4 cup mint", "1/2 cup parsley", "1/2 cup red onion", "1/4 cup feta", "1/2 cup pistachios", "Zest of one lemon"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1657964025423432%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Red Lentil Pizza",
+    link: "https://www.facebook.com/share/r/18xVB53G47/",
+    tags: ["Pizza", "Red Lentils", "Bake"],
+    ingredients: ["100g Red Lentils", "2 Tbsp Tomato Sauce", "60g Low Fat Shredded Cheese", "1/2 Red Onion", "Paprika", "Salt & pepper"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F980814624396503%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Veggie Flatbread",
+    link: "https://www.facebook.com/share/r/1H6rAaFPpM/",
+    tags: ["Bread", "Bake", "Zucchini"],
+    ingredients: ["2 Zucchini", "1 Potato", "1 Cup Cherry Tomatoes", "1 Red Onion", "2.5 Cups Flour", "Olive Oil", "Salt & Pepper"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F949816537666404%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Melting Cabbage Bake",
+    link: "https://www.facebook.com/share/r/1Cs2XnLjFU/",
+    tags: ["Cabbage"],
+    ingredients: ["1 medium green cabbage cut into 8 wedges", "2 tbsp olive oil", "2 tbsp unsalted butter", "1 shallot", "garlic", "1 cup vegetable broth", "2 cups heavy cream", "½ cup sun-dried tomatoes", "1 cup parmesan cheese", "2 tbsp chili oil", "Oregano", "Thyme", "Smoked paprika", "Salt & Pepper", "Parsley"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1707293950449027%2F&show_text=false&width=266&t=0"
+  },
+  {
+    name: "Greek Style Halloumi Flatbread",
+    link: "https://www.facebook.com/share/r/15rTeDA64W4/",
+    tags: ["Halloumi", "Wraps"],
+    ingredients: ["1 flatbread", "halloumi cheese", "cucumber", "tomato", "red onion", "olive oil", "lemon juice", "salt and pepper", "oregano", "Greek yogurt ", "Garlic", "Salt & Pepper", "lemon juice", "olive oil ", "cucumber ", "Dill"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1345065371137696%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Lentil Bread",
+    link: "https://www.facebook.com/share/r/1D4sAxG1NX/",
+    tags: ["Bread", "Bake", "Red Lentils"],
+    ingredients: ["150g red lentils", "2 tbsp extra virgin olive oil ", "2 tbsp yoghurt ", "1 tsp salt", "1 tsp paprika ", "1 tsp garlic powder ", "1 tsp mixed herbs", "1 tsp baking powder", "20g psyllium husk powder"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1253156930302099%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Chickpea Crust Pizza",
+    link: "https://www.facebook.com/share/r/1Ks8sMQThT/",
+    tags: ["Chickpeas"],
+    ingredients: ["90g Chickpeas", "1/2 cup sour cream or yogurt", "1 egg", "Salt", "olive oil", "1/2 tsp. baking powder", "tomato sauce", "oregano", "shredded mozzarella ", "black olives", "Basil"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F977215734965633%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Creamy Potato Dal",
+    link: "https://www.facebook.com/share/r/197g3QzTYA/",
+    tags: ["Red Lentils", "Potatoes", "Curry"],
+    ingredients: ["200g red lentils", "olive oil", "cumin seeds", "onion", "garlic", "ginger ", "curry powder", "canned tomatoes", "potatoes", "Vegetable stock", "coconut milk", "Coriander", "3 limes"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1288588483453033%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Cheesy Red Pepper Boats",
+    link: "https://www.facebook.com/share/r/14f726taY7A/",
+    tags: ["Bell Peppers"],
+    ingredients: ["5 long red sweet peppers", "100g feta cheese", "100g mozzarella", "100g cream cheese", "2 spring onions", "tomato", "garlic", "basil", "mint", "olive oil", "Salt & Pepper", "Chilli flakes"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1944985342772025%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Veggie Cabbage Lasagna",
+    link: "https://www.facebook.com/share/r/1EBsvVsX5G/",
+    tags: ["Cabbage", "Lasagna"],
+    ingredients: ["1 medium cabbage", "Cream Cheese", "olive oil", "garlic", "onion", "mushrooms", "carrot", "zucchini", "Italian seasoning", "Salt & Pepper", "1/4 cup marinara sauce", "Basil"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F924983697108275%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Turkish Eggs",
+    link: "https://www.facebook.com/share/r/1LPsVutNRp/",
+    tags: ["Breakfast", "Eggs", "Yogurt"],
+    ingredients: ["4 eggs", "350g yogurt", "garlic", "butter", "Salt & Pepper", "dill"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1518963022901739%2F&show_text=false&width=267&t=0"
+  },
+  {
+    name: "Baked Oats",
+    link: "https://www.facebook.com/share/r/1A2iWdVZpw/",
+    tags: ["Oats", "Bake"],
+    ingredients: ["60g rolled oats", "50g grated carrot", "200g Greek yoghurt", "2  eggs", "agave/maple syrup", "almonds", "cinnamon", "baking powder"],
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0"
   }
 ];
