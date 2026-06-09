@@ -1,258 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Shire - Recipe Hub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shire Recipes</title>
+  <style>
+    :root {
+      --bg-color: #f4f6f8;
+      --card-bg: #ffffff;
+      --text-color: #2c3e50;
+      --primary-color: #2e7d32;
+      --tag-bg: #e8f5e9;
+      --border-radius: 12px;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Layout Wrapper */
+    .app-container {
+      display: flex;
+      width: 100%;
+    }
+
+    /* Sidebar Styling */
+    aside {
+      width: 260px;
+      background-color: var(--card-bg);
+      padding: 30px 20px;
+      border-right: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    aside h2 {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .filter-btn {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 8px;
+      background: none;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      text-align: left;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: var(--text-color);
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      background-color: var(--bg-color);
+    }
+
+    .filter-btn.active {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Main Content Area */
+    main {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--text-color);
+      margin-bottom: 8px;
+    }
+
+    /* Recipes Grid */
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    /* Recipe Card Styling */
+    .recipe-card {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #eaeaea;
+    }
+
+    .recipe-card-header h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 15px;
+    }
+
+    .card-tag {
+      background-color: var(--tag-bg);
+      color: var(--primary-color);
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .recipe-card ul {
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+
+    .recipe-card li {
+      font-size: 0.9rem;
+      padding: 6px 0;
+      border-bottom: 1px dashed #f0f0f0;
+      color: #555;
+    }
+
+    .recipe-card li:last-child {
+      border-bottom: none;
+    }
+
+    /* Strategy 1: Optimized Lazy Video Container & Placeholder */
+    .video-container {
+      width: 100%;
+      height: 476px;
+      max-width: 267px;
+      margin: 15px auto 0 auto;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .video-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #2c3e50, #1a252f);
+      cursor: pointer;
+      color: #fff;
+      transition: opacity 0.2s;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .video-placeholder:hover {
+      opacity: 0.9;
+    }
+
+    .play-button {
+      padding: 12px 20px;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    iframe {
+      border: none;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .app-container {
+        flex-direction: column;
+      }
+      aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .filter-btn {
+        display: inline-block;
+        width: auto;
+        margin-right: 5px;
+      }
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans min-h-screen">
+<body>
 
-    <header class="text-center pt-10 pb-4 max-w-7xl mx-auto px-4">
-        <h1 class="text-4xl font-extrabold text-emerald-800 mb-2 tracking-wide">🏡 The Shire</h1>
-        <p class="text-stone-600 font-medium">"One vegetarian cookbook to rule them all, for Breakfast, Second Breakfast, and Elevenses."</p>
-    </header>
-
-    <div class="max-w-7xl mx-auto px-4 mb-4 md:hidden">
-        <button onclick="toggleMobileFilters()" class="w-full flex items-center justify-center gap-2 bg-emerald-800 hover:bg-emerald-900 text-white font-semibold py-2.5 px-4 rounded-xl shadow-sm transition">
-            <span>🔍</span>
-            <span id="mobile-filter-btn-text">Show Filter Provisions</span>
-        </button>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 pb-8 flex flex-col md:flex-row gap-8">
-        
-        <aside id="filter-sidebar" class="hidden md:block w-full md:w-64 shrink-0 bg-white rounded-xl shadow-sm border border-stone-200/60 p-5 self-start">
-            <section>
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-xs font-bold uppercase tracking-wider text-stone-400">Filter Provisions:</h2>
-                    <button onclick="clearAllFilters()" class="text-xs text-emerald-700 hover:underline font-semibold">Clear All</button>
-                </div>
-                <div id="filter-container" class="space-y-1.5">
-                    </div>
-            </section>
-        </aside>
-
-        <div class="flex-1">
-            <div id="active-chips-bar" class="flex flex-wrap items-center gap-2 mb-6 hidden">
-                <span class="text-xs text-stone-400 font-medium uppercase tracking-wider">Active Filters:</span>
-                <div id="chips-container" class="flex flex-wrap gap-1.5"></div>
-            </div>
-
-            <main id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
-                </main>
-            
-            <div id="empty-state" class="hidden text-center py-16 bg-white rounded-xl border border-dashed border-stone-200">
-                <span class="text-4xl block mb-2">📜</span>
-                <h3 class="text-lg font-bold text-stone-700">Not all those who wander are lost...</h3>
-                <p class="text-sm text-stone-400 mt-1">But this specific ingredient combination is. Try resetting your filters!</p>
-            </div>
+  <div class="app-container">
+    <aside>
+      <h2>Categories</h2>
+      <div id="tag-filters">
+        <button class="filter-btn active" onclick="filterRecipes('All', this)">All Recipes</button>
         </div>
+    </aside>
 
-    </div>
+    <main>
+      <header>
+        <h1>The Shire Kitchen</h1>
+        <p>Centralized recipe index & video archives</p>
+      </header>
 
-    <script src="recipes.js"></script>
-    
-    <script>
-        const selectedTags = new Set();
+      <section class="recipes-grid" id="recipes-display">
+        </section>
+    </main>
+  </div>
 
-        // 1. Extract unique tags and build the sidebar filter menu
-        const allTags = new Set();
-        recipeData.forEach(recipe => recipe.tags.forEach(tag => allTags.add(tag)));
-        
-        const filterContainer = document.getElementById('filter-container');
-        
-        Array.from(allTags).sort().forEach(tag => {
-            const label = document.createElement('label');
-            label.className = "flex items-center justify-between w-full px-3 py-2 rounded-lg text-sm text-stone-600 font-medium cursor-pointer transition hover:bg-stone-50 select-none border border-transparent";
-            label.id = `label-${tag}`;
-            
-            label.innerHTML = `
-                <div class="flex items-center gap-2.5">
-                    <input type="checkbox" id="check-${tag}" onchange="toggleTagFilter('${tag}')" class="w-4 h-4 rounded text-emerald-700 focus:ring-emerald-600 border-stone-300 accent-emerald-700">
-                    <span>${tag}</span>
-                </div>
-                <span class="text-xs text-stone-400 font-normal">(${countTagOccurrences(tag)})</span>
-            `;
-            filterContainer.appendChild(label);
-        });
+  <script src="recipes.js"></script>
 
-        function countTagOccurrences(tag) {
-            return recipeData.filter(r => r.tags.includes(tag)).length;
+  <script>
+    // Fallback if recipes.js doesn't load or array name differs
+    const recipes = typeof recipeData !== 'undefined' ? recipeData : [];
+
+    // Initialize the Webpage
+    document.addEventListener("DOMContentLoaded", () => {
+      generateSidebarTags();
+      renderRecipes(recipes);
+    });
+
+    // Extract tags cleanly and build the sidebar
+    function generateSidebarTags() {
+      const tagContainer = document.getElementById("tag-filters");
+      const allTags = new Set();
+      
+      recipes.forEach(recipe => {
+        if (recipe.tags) {
+          recipe.tags.forEach(tag => allTags.add(tag));
         }
+      });
 
-        // 2. Render Recipes based on current active tags
-        function renderRecipes() {
-            const grid = document.getElementById('recipes-grid');
-            const emptyState = document.getElementById('empty-state');
-            grid.innerHTML = ''; 
+      // Sort alphabetically and create selector buttons
+      Array.from(allTags).sort().forEach(tag => {
+        const btn = document.createElement("button");
+        btn.className = "filter-btn";
+        btn.textContent = `${tag}`;
+        btn.onclick = (e) => filterRecipes(tag, btn);
+        tagContainer.appendChild(btn);
+      });
+    }
 
-            const filteredRecipes = recipeData.filter(recipe => {
-                if (selectedTags.size === 0) return true;
-                return Array.from(selectedTags).every(tag => recipe.tags.includes(tag));
-            });
+    // Filter Trigger Logic
+    function filterRecipes(selectedTag, element) {
+      // Manage active visual state in sidebar
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
 
-            if (filteredRecipes.length === 0) {
-                grid.className = "hidden"; // Hide the grid entirely
-                emptyState.classList.remove('hidden');
-                return;
-            } else {
-                // Explicitly ensure the grid uses layout styling when showing recipes
-                grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start";
-                emptyState.classList.add('hidden');
-            }
+      if (selectedTag === 'All') {
+        renderRecipes(recipes);
+      } else {
+        const filtered = recipes.filter(r => r.tags && r.tags.includes(selectedTag));
+        renderRecipes(filtered);
+      }
+    }
 
-            filteredRecipes.forEach((recipe, index) => {
-                const card = document.createElement('div');
-                card.className = "bg-white rounded-xl shadow-sm border border-stone-100 overflow-hidden p-5 flex flex-col justify-between transition transform hover:shadow-md";
-                
-                const tagsHTML = recipe.tags.map(t => `<span class="bg-stone-100 text-stone-600 text-xs px-2.5 py-1 rounded-md font-semibold">${t}</span>`).join(' ');
-                
-                const ingredientsHTML = recipe.ingredients && recipe.ingredients.length > 0
-                    ? recipe.ingredients.map(ing => `<li class="flex items-center gap-2">🌿 ${ing}</li>`).join('')
-                    : '<li>No ingredients listed.</li>';
+    // Main UI Render Loop
+    function renderRecipes(recipeArray) {
+      const displayGrid = document.getElementById("recipes-display");
+      displayGrid.innerHTML = "";
 
-                let videoEmbedHTML = '';
-                if (recipe.embedUrl) {
-                    videoEmbedHTML = `
-                        <div class="mt-4">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Recipe Video:</h4>
-                            <div class="flex justify-center rounded-lg overflow-hidden bg-stone-50 border border-stone-200 p-2">
-                                <iframe src="${recipe.embedUrl}" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                            </div>
-                        </div>`;
-                } else if (recipe.link.includes('youtube.com/watch') || recipe.link.includes('youtu.be/')) {
-                    let videoId = recipe.link.includes('youtu.be/') ? recipe.link.split('/').pop() : new URL(recipe.link).searchParams.get('v');
-                    videoEmbedHTML = `
-                        <div class="mt-4 rounded-lg overflow-hidden border border-stone-200 aspect-video">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
-                        </div>`;
-                } else {
-                    videoEmbedHTML = `
-                        <div class="mt-4">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-1.5">Recipe Video:</h4>
-                            <a href="${recipe.link}" target="_blank" class="group/video block relative rounded-lg overflow-hidden border border-dashed border-emerald-300 bg-emerald-50/40 p-4 text-center transition hover:bg-emerald-50 hover:border-emerald-400">
-                                <div class="text-2xl mb-1">🎬</div>
-                                <span class="text-xs font-bold text-emerald-800 block group-hover/video:underline">Watch Tutorial Reel</span>
-                                <span class="text-[10px] text-stone-400 block mt-0.5">Opens clip in a new tab</span>
-                            </a>
-                        </div>`;
-                }
+      if (recipeArray.length === 0) {
+        displayGrid.innerHTML = "<p>No recipes found matching this selection.</p>";
+        return;
+      }
 
-                card.innerHTML = `
-                    <div>
-                        <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 text-lg mb-2 flex justify-between items-center group focus:outline-none">
-                            <span class="group-hover:text-emerald-800 transition">${recipe.name}</span>
-                            <span id="arrow-${index}" class="text-stone-400 transition-transform duration-200 text-sm">▼</span>
-                        </button>
-                        
-                        <div class="flex flex-wrap gap-1.5 mb-2">
-                            ${tagsHTML}
-                        </div>
+      recipeArray.forEach((recipe, index) => {
+        const hasVideo = recipe.embedUrl && recipe.embedUrl.trim() !== "";
+        const card = document.createElement("div");
+        card.className = "recipe-card";
 
-                        <div id="ingredients-${index}" class="hidden border-t border-stone-100 pt-3 mt-3">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Ingredients:</h4>
-                            <ul class="text-sm text-stone-600 space-y-1 mb-2">
-                                ${ingredientsHTML}
-                            </ul>
-                            ${videoEmbedHTML}
-                        </div>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
+        card.innerHTML = `
+          <div class="recipe-card-header">
+            <h3>${recipe.name || "Unnamed Recipe"}</h3>
+            <div class="card-tags">
+              ${recipe.tags.map(t => `<span class="card-tag">${t}</span>`).join('')}
+            </div>
+            <ul>
+              ${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}
+            </ul>
+          </div>
+          
+          ${hasVideo ? `
+            <div class="video-container" id="video-container-${index}">
+              <div class="video-placeholder" onclick="loadActualVideo('${btoa(recipe.embedUrl)}', ${index})">
+                <div class="play-button">▶ Watch Video</div>
+              </div>
+            </div>
+          ` : ''}
+        `;
+        displayGrid.appendChild(card);
+      });
+    }
 
-        // 3. Handle toggling selections on/off
-        function toggleTagFilter(tag) {
-            const checkbox = document.getElementById(`check-${tag}`);
-            const label = document.getElementById(`label-${tag}`);
-
-            if (checkbox.checked) {
-                selectedTags.add(tag);
-                label.className = "flex items-center justify-between w-full px-3 py-2 rounded-lg text-sm font-bold cursor-pointer transition bg-emerald-50 text-emerald-800 border border-emerald-100 select-none";
-            } else {
-                selectedTags.delete(tag);
-                label.className = "flex items-center justify-between w-full px-3 py-2 rounded-lg text-sm text-stone-600 font-medium cursor-pointer transition hover:bg-stone-50 select-none border border-transparent";
-            }
-
-            updateChipsBar();
-            renderRecipes();
-        }
-
-        // 4. Update visual chips
-        function updateChipsBar() {
-            const bar = document.getElementById('active-chips-bar');
-            const container = document.getElementById('chips-container');
-            container.innerHTML = '';
-
-            if (selectedTags.size === 0) {
-                bar.classList.add('hidden');
-                return;
-            }
-
-            bar.classList.remove('hidden');
-            selectedTags.forEach(tag => {
-                const chip = document.createElement('span');
-                chip.className = "inline-flex items-center gap-1 bg-emerald-800 text-white text-xs font-semibold px-2.5 py-1 rounded-md shadow-sm";
-                chip.innerHTML = `
-                    ${tag}
-                    <button onclick="removeSingleChip('${tag}')" class="hover:bg-emerald-900 rounded p-0.5 text-[10px] leading-none font-bold">✕</button>
-                `;
-                container.appendChild(chip);
-            });
-        }
-
-        function removeSingleChip(tag) {
-            document.getElementById(`check-${tag}`).checked = false;
-            toggleTagFilter(tag);
-        }
-
-        function clearAllFilters() {
-            selectedTags.forEach(tag => {
-                document.getElementById(`check-${tag}`).checked = false;
-            });
-            selectedTags.clear();
-            
-            const labels = filterContainer.querySelectorAll('label');
-            labels.forEach(lbl => {
-                lbl.className = "flex items-center justify-between w-full px-3 py-2 rounded-lg text-sm text-stone-600 font-medium cursor-pointer transition hover:bg-stone-50 select-none border border-transparent";
-            });
-
-            updateChipsBar();
-            renderRecipes();
-        }
-
-        // 5. Toggle Card Dropdowns
-        function toggleIngredients(index) {
-            const panel = document.getElementById(`ingredients-${index}`);
-            const arrow = document.getElementById(`arrow-${index}`);
-            
-            if (panel.classList.contains('hidden')) {
-                panel.classList.remove('hidden');
-                arrow.style.transform = 'rotate(180deg)';
-            } else {
-                panel.classList.add('hidden');
-                arrow.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // 6. Mobile Drawer Toggle Logic
-        function toggleMobileFilters() {
-            const sidebar = document.getElementById('filter-sidebar');
-            const btnText = document.getElementById('mobile-filter-btn-text');
-            
-            if (sidebar.classList.contains('hidden')) {
-                sidebar.classList.remove('hidden');
-                btnText.innerText = "Hide Filter Provisions";
-            } else {
-                sidebar.classList.add('hidden');
-                btnText.innerText = "Show Filter Provisions";
-            }
-        }
-
-        // Run the initial print immediately on startup
-        renderRecipes();
-    </script>
+    // Strategy 1 Execution: Instantiates video iframe strictly on user interaction
+    function loadActualVideo(encodedUrl, index) {
+      const decodedUrl = atob(encodedUrl);
+      const container = document.getElementById(`video-container-${index}`);
+      
+      container.innerHTML = `
+        <iframe 
+          src="${decodedUrl}" 
+          scrolling="no" 
+          frameborder="0" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      `;
+    }
+  </script>
 </body>
 </html>
