@@ -408,8 +408,7 @@ const recipeData = [
     name: "Red Lentil Pizza",
     link: "https://www.facebook.com/share/r/18xVB53G47/",
     tags: ["Pizza", "Red Lentils", "Bake"],
-    ingredients: ["100g Red Lentils", "2 Tbsp Tomato Sauce", "60g Low Fat Shredded Cheese", "1/2 Red Onion", "Paprika", "Salt & pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F980814624396503%2F&show_text=false&width=267&t=0"
+    ingredients: ["100g Red Lentils", "2 Tbsp Tomato Sauce", "60g Low Fat Shredded Cheese", "1/2 Red Onion", "Paprika", "Salt & pepper"]
   },
   {
     name: "Veggie Flatbread",
@@ -457,8 +456,7 @@ const recipeData = [
     name: "Cheesy Red Pepper Boats",
     link: "https://www.facebook.com/share/r/14f726taY7A/",
     tags: ["Bell Peppers"],
-    ingredients: ["5 long red sweet peppers", "100g feta cheese", "100g mozzarella", "100g cream cheese", "2 spring onions", "tomato", "garlic", "basil", "mint", "olive oil", "Salt & Pepper", "Chilli flakes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1944985342772025%2F&show_text=false&width=267&t=0"
+    ingredients: ["5 long red sweet peppers", "100g feta cheese", "100g mozzarella", "100g cream cheese", "2 spring onions", "tomato", "garlic", "basil", "mint", "olive oil", "Salt & Pepper", "Chilli flakes"]
   },
   {
     name: "Veggie Cabbage Lasagna",
