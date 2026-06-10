@@ -69,12 +69,17 @@
 
     </div>
 
+    <button id="back-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-md hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-400 hover:text-emerald-800 dark:hover:text-emerald-400 transition-all duration-300 translate-y-10 opacity-0 pointer-events-none focus:outline-none" title="Return to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
     <script src="recipes.js"></script>
     
     <script>
         const selectedTags = new Set();
         
-        // Pagination State Variables
         let recipesVisibleLimit = 42; 
         const itemsToAppend = 9;
 
@@ -96,6 +101,25 @@
         }
 
         updateThemeUI();
+
+        // Scroll Visibility Logic for Back to Top Button
+        const topBtn = document.getElementById('back-to-top');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
+                topBtn.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            } else {
+                topBtn.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+                topBtn.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
         // 1. Extract unique tags and build the sidebar filter menu
         const allTags = new Set();
@@ -122,7 +146,6 @@
             return recipeData.filter(r => r.tags.includes(tag)).length;
         }
 
-        // Incremental Pagination Loop Handler
         function loadMoreRecipes() {
             recipesVisibleLimit += itemsToAppend;
             renderRecipes();
@@ -150,10 +173,8 @@
                 emptyState.classList.add('hidden');
             }
 
-            // Slice out only what the user is currently permitted to view
             const paginatedRecipes = filteredRecipes.slice(0, recipesVisibleLimit);
 
-            // Conditional rendering logic to hide or display the "See More" provision trigger
             if (filteredRecipes.length > recipesVisibleLimit) {
                 loadMoreBar.classList.remove('hidden');
             } else {
@@ -237,7 +258,6 @@
             const checkbox = document.getElementById(`check-${tag}`);
             const label = document.getElementById(`label-${tag}`);
 
-            // Reset pagination limit back to baseline whenever filters modify the layout grid context
             recipesVisibleLimit = 42;
 
             if (checkbox.checked) {
@@ -281,7 +301,7 @@
         }
 
         function clearAllFilters() {
-            recipesVisibleLimit = 42; // Reset view windows
+            recipesVisibleLimit = 42; 
             selectedTags.forEach(tag => {
                 document.getElementById(`check-${tag}`).checked = false;
             });
@@ -324,7 +344,6 @@
             }
         }
 
-        // Run the initial print immediately on startup
         renderRecipes();
     </script>
 </body>
