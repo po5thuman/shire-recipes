@@ -29,7 +29,7 @@ const recipeData = [
   {
     name: "Borani",
     link: "https://www.facebook.com/reel/944165787786671/",
-    tags: ["Aubergine"],
+    tags: ["Aubergine", "Chickpeas"],
     ingredients: ["Aubergine", "Garlic", "Chick Peas", "Tomato Passata", "Spices", "Water", "Salt", "Sundried Tomatoes", "Greek Yoghurt", "Lemon Juice", "Dill", "Parsley"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F944165787786671%2F&show_text=false&width=267&t=0"
   },
@@ -43,7 +43,7 @@ const recipeData = [
   {
     name: "Aubergine & Quinoa Bowl",
     link: "https://www.facebook.com/share/r/1A5QNVuCFU/",
-    tags: ["Aubergine", "Quinoa"],
+    tags: ["Carrots", "Aubergine", "Quinoa"],
     ingredients: ["Aubergines", "Onion", "Carrots", "Olive Oil", "Garlic", "Spices", "Canned Tomatoes", "Red Kidney Beans", "Vegetable Stock", "Soy Sauce", "Salt & Pepper", "Lemon Juice", "Cooked Quinoa", "Greek Yogurt"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F987784476751137%2F&show_text=false&width=267&t=0"
   },
@@ -57,7 +57,7 @@ const recipeData = [
   {
     name: "Pan Roast with Creamy Garlic & Feta Sauce",
     link: "https://www.facebook.com/reel/791181089862992",
-    tags: ["Potatoes", "Zucchini", "Bell Pepper"],
+    tags: ["Potatoes", "Zucchini", "Bell Pepper", "Chickpeas"],
     ingredients: ["Potato", "Zucchini", "Red Bell Pepper", "Chick Peas", "Garlic", "Salt & Pepper", "Olive Oil", "Yogurt", "Feta Cheese", "Sundried Tomato", "Bell Pepper", "Parsley", "Lemon Juice"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791181089862992%2F&show_text=false&width=267&t=0"
   },
@@ -78,13 +78,13 @@ const recipeData = [
   {
     name: "Carrot & Butter Bean Dip",
     link: "https://www.facebook.com/reel/1303730294383083",
-    tags: ["Butter Beans", "Dip"],
+    tags: ["Carrots", "Butter Beans", "Dip"],
     ingredients: ["Carrots", "Butter Beans", "Ground Turmeric", "Cumin Seeds", " Smoked Paprika", "Garlic", "Olive Oil", "Tahini", "Lemon Juice", "Salt & Pepper"],
   },
   {
     name: "Roasted Vegetables",
     link: "https://www.facebook.com/reel/8951782511536323",
-    tags: ["Broccoli", "Cauliflower"],
+    tags: ["Broccoli", "Cauliflower", "Sweet Potato"],
     ingredients: ["Broccoli", "Caulifloweer", "Onion", "Sweet Potato", "Chickpeas", "Seasoning", "Olive Oil", "Yogurt", "Tahini", "Mustard", "Lemon Juice", "Garlic", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F8951782511536323%2F&show_text=false&width=267&t=0"
   },
@@ -98,7 +98,7 @@ const recipeData = [
   {
     name: "Roasted Cauliflower & Potatoes",
     link: "https://www.facebook.com/reel/1717240235749878",
-    tags: ["Cauliflower", "Potatoes"],
+    tags: ["Cauliflower", "Potatoes", "Chickpeas"],
     ingredients: ["Olive Oil", "Chickpeas", "Potatoes", "Cauliflower", "Cornflour", "1 tsp Sumac ", "1/2 tsp Cumin", "1 tsp Paprika", "1 tsp Pul Biber", "1 tsp Garlic Powder", "Salt & Pepper", "1 tsp Dried Oregano", "1 tbsp Sesame Seeds", "Tahini", "Lemon Juice", "Cold Water"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1717240235749878%2F&show_text=false&width=267&t=0"
   },
@@ -127,7 +127,7 @@ const recipeData = [
     name: "Smashed Potatoes with Beetroot Beans",
     link: "https://www.facebook.com/reel/1149304696381982",
     tags: ["Potatoes", "Butter Beans", "Beetroot"],
-    ingredients: ["Potatoes", "Dill", "Thyme", "Salt & Pepper", "1 tbsp Maple Syrup", "3 Medium Beetroots", " 2 Cans Butter Beans", "Garlic", "Tahini", "Lemon Juice", "Olive Oil", "Ground Cumin"],
+    ingredients: ["Potatoes", "Dill", "Beetroot", "Thyme", "Salt & Pepper", "1 tbsp Maple Syrup", "3 Medium Beetroots", " 2 Cans Butter Beans", "Garlic", "Tahini", "Lemon Juice", "Olive Oil", "Ground Cumin"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1149304696381982%2F&show_text=false&width=267&t=0"
   },
   {
@@ -140,7 +140,7 @@ const recipeData = [
   {
     name: "Zucchini Frittata",
     link: "https://www.facebook.com/reel/2667889830070013",
-    tags: ["Zucchini"],
+    tags: ["Zucchini", "Carrots"],
     ingredients: ["Onion", "Zucchini", "Carrots", "Corn", "100g Cheddar Cheese", "50g Feta Cheese", "Parsley", "2/3 Cup Flour", "1/4 Cup Milk", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2667889830070013%2F&show_text=false&width=267&t=0"
   },
@@ -161,42 +161,42 @@ const recipeData = [
   {
     name: "Za'Atar Broccoli with Red Pepper Sauce",
     link: "https://www.facebook.com/reel/2160819401066413",
-    tags: ["Broccoli"],
+    tags: ["Broccoli", "Bell Pepper"],
     ingredients: ["Broccoli", "Olive Oil", "Spices", "Salt & Pepper", "Walnuts", "Cumin Seeds", "Bell Pepper", "Lemon Juice", "Garlic", "Tomato Paste"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2160819401066413%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Baked Rice Paper Dumplings",
     link: "https://www.facebook.com/reel/1133101565401922",
-    tags: ["Dumplings"],
-    ingredients: ["500g mushrooms", "500g Tofu", "1 Large Carrot", " Spring Onions", "Fresh Ginger", "Garlic", "Olive Oil", " Soy Sauce", "Rice Vinegar", "1-2 Tbsp Cornstarch (Optional)", "12-14 Sheets Rice Paper", "Sesame Seeds", "1 tsp Sugar", "1 tbsp Hot Water", "2 tbsp Soy Sauce", "1 tsp Rice Vinegar", "1 tsp Chili Oil", "1 tsp Garlic (Minced)", "1 tsp Sesame Seeds", "1/2 tsp Sesame Oil"],
+    tags: ["Dumplings", "Tofu", "Carrots"],
+    ingredients: ["500g mushrooms", "500g Tofu", "1 Large Carrot", " Spring Onions", "Fresh Ginger", "Garlic", "Olive Oil", " Soy Sauce", "Rice Vinegar", "1-2 Tbsp Cornstarch (Optional)", "12-14 Sheets Rice Paper", "Sesame Seeds", "1 tsp Sugar", "1 tbsp Hot Water", "1 tsp Rice Vinegar", "1 tsp Chili Oil", "1 tsp Garlic (Minced)", "1 tsp Sesame Seeds", "1/2 tsp Sesame Oil"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1133101565401922%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Spinach Feta Puff Pastry",
     link: "https://www.facebook.com/reel/24439419079016468",
-    tags: ["Spinach", "Feta Cheese"],
+    tags: ["Spinach", "Feta Cheese", "Pastry", "Bake"],
     ingredients: ["275 g Puff Pastry", "Garlic", "350 g Frozen Spinach", "100g Feta Cheese", "100g Gouda Cheese", "1 Egg", "Salt & Pepper", "1 Egg for Brushing", "125g Mozzarella", "White & Black Sesame Seeds"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24439419079016468%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Minestrone",
     link: "https://www.facebook.com/reel/1833903350559898",
-    tags: ["Soup"],
+    tags: ["Soup", "Carrot", "Potatoes", "Barley"],
     ingredients: ["Olive Oil", "Onion", "Carrot", "Celery", "Potatoes", "Canned Tomatoes", "1 Can Red Kidney Beans", "100g Pearl Barley", "Parsley", "Basil", "Parmesan Cheese"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1833903350559898%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Roasted Potatoes & Carrots Soup",
     link: "https://www.facebook.com/reel/1565305374879968",
-    tags: ["Soup"],
+    tags: ["Potatoes", "Soup", "Carrots"],
     ingredients: ["Potatoes", "Onion", "Garlic", "Carrots", "Olive Oil", "Seasoning", "Coconut Milk", "Vegetable Broth", "Lemon Juice", "Parsley"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1565305374879968%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Dragon Tofu",
     link: "https://www.facebook.com/reel/1247205270759892",
-    tags: ["Tofu"],
+    tags: ["Tofu", "Bell Peppers"],
     ingredients: ["Tofu", "Salt & Pepper", "1 Egg", "Cornflour", "Green/Red/Orange Bell Peppers", "Garlic", "Ginger", "Onion", "Cashew Nuts", "Ketchup", "Soy Sauce", "Red Chilli Sauce", "Honey", "Spring Onion"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fnotacookofficial%2Fvideos%2F1247205270759892%2F&show_text=false&width=267&t=0"
   },
@@ -231,14 +231,14 @@ const recipeData = [
   {
     name: "Cheesy Lentil Vegetable Pie",
     link: "https://www.facebook.com/reel/935457789172550",
-    tags: ["Red Lentils", "Zucchini"],
+    tags: ["Red Lentils", "Lentils", "Zucchini", "Carrots"],
     ingredients: ["Olive Oil", "Onion", "Carrot", "200g Zucchini", "Garlic", "200g Red Lentils", "600ml Vegetable Broth", "112g Shredded Mozzarella", "30g Breadcrumbs", "Salt & Pepper", "1 tbs Parmesan Cheese", "Chili Pepper Flakes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F935457789172550%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Baked Oats Cake",
     link: "https://www.facebook.com/reel/1817084158984624",
-    tags: ["Oats", "Dessert"],
+    tags: ["Oats", "Dessert", "Carrots", "Bake"],
     ingredients: ["60g Oats", "50g Grated Carrots", "200g Greek Yogurt", "2 Eggs", "1/2 tsp Baking Powder", "1 tsp Cinnamon", "1 tbsp Agave Syrup", "Almond Flakes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0"
   },
@@ -252,14 +252,14 @@ const recipeData = [
   {
     name: "Chickpea Soup",
     link: "https://www.facebook.com/share/r/1BFL1Z59xJ/",
-    tags: ["Soup", "Chickpeas", "Bell Pepper"],
+    tags: ["Soup", "Chickpeas", "Bell Pepper", "Carrots", "Gnocchi"],
     ingredients: ["45g Cashews", "180ml Soy Milk", "30g Nutritional Yeast", "Olive Oil", "2 Onions", "2 Carrots", "1 Red Bell Pepper", "85g Sundried Tomatoes", "Garlic", "85g Tomato Paste", "490g Chickpeas", "1200ml Vegetable Broth", "250g Gnocchi", "Parsley", "Basil", "Spinach", "Lemon Juice", "Smoked Paprika", "Garlic Powder", "Dried Thyme", "Chili Flakes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F854383547652526%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Marry Me Chickpeas",
     link: "https://www.facebook.com/share/r/1C2PC33UgU/",
-    tags: ["Chickpeas"],
+    tags: ["Chickpeas", "Bell Pepper"],
     ingredients: ["Olive Oil", "1 Onion", "1 Red Bell Pepper", "14g Sundried Tomatoes", "Garlic", "Tomato Paste", "1/2 Red Chili Flakes", "1 tsp Mixed Herbs", "1 tsp Smoked Papriks", "16g Cashews", "295ml Soy Milk", "15g Nutritional Yeast", "1 Can Chickpeas", "Spinach", "Lemon Juice", "Basil", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1337456481572728%2F&show_text=false&width=267&t=0"
   },
@@ -292,7 +292,7 @@ const recipeData = [
   {
     name: "One Pot Lentils",
     link: "https://www.facebook.com/share/r/18aBLW3Xhp/",
-    tags: ["Black Lentils"],
+    tags: ["Black Lentils", "Lentils"],
     ingredients: ["Shallots", "Garlic", "Cumin", "Paprika", "Canned Lentils", "Parsley", "Thyme", "Vegetable Broth", "Greek Yogurt"],
   },
   {
@@ -318,14 +318,14 @@ const recipeData = [
   {
     name: "Mercimek Koftesi",
     link: "https://www.facebook.com/reel/1689922655356072/",
-    tags: ["Red Lentils"],
+    tags: ["Red Lentils", "Lentils", "Bulgur"],
     ingredients: ["250g Red Lentils", "550ml Water", "180g Bulgur", "80ml Olive Oil", "Onion", "Tomato Paste", " 1tsp Cumin", "2tsp Paprika", "Salt & Pepper", "Parsley", "Mint", "4 Green Onions", "Lemon Juice", "1 tbsp Pomegranate Molasses", "1 Lettuce Head"],
   },
   {
     name: "Zucchini & Chickpea Salad",
     link: "https://www.facebook.com/share/r/1CgbE8tXAc/",
-    tags: ["Zucchini"],
-    ingredients: ["3 Zucchini", "Salt & Pepper", "Olive Oil", "1 tsp Paprika", "1/2 tsp Garlic Powder", "Parsley", "Red Onion", "Avocado", "Pistachios"],
+    tags: ["Zucchini", "Chickpeas", "Salad"],
+    ingredients: ["3 Zucchini", "Chickpeas", "Salt & Pepper", "Olive Oil", "1 tsp Paprika", "1/2 tsp Garlic Powder", "Parsley", "Red Onion", "Avocado", "Pistachios"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1217666250231692%2F&show_text=false&width=267&t=0"
   },
   {
@@ -337,7 +337,7 @@ const recipeData = [
   {
     name: "Spinach & Feta Puff Pastry Rolls",
     link: "https://www.facebook.com/reel/867033888981430",
-    tags: ["Puff Pastry", "Feta Cheese"],
+    tags: ["Puff Pastry", "Feta Cheese", "Bake"],
     ingredients: ["200g Feta Cheese", "120g Spinach", "1 Egg", "Salt & Pepper", "340g Puff Pastry", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F867033888981430%2F&show_text=false&width=267&t=0"
   },
@@ -351,7 +351,7 @@ const recipeData = [
   {
     name: "Black Lentil Stew",
     link: "https://www.facebook.com/share/r/1BL5nqqRLA/",
-    tags: ["Black Lentils"],
+    tags: ["Black Lentils", "Lentils", "Carrots", "Potatoes"],
     ingredients: ["Carrots", "Onion", "Celery", "Tomato Paste", "Mushrooms", "Black Lentils", "Canned Tomatoes", "Vegetable Stock", "Potatoes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F973408021733090%2F&show_text=false&width=267&t=0"
   },
@@ -372,28 +372,28 @@ const recipeData = [
   {
     name: "Vegetable Bake",
     link: "https://www.facebook.com/share/r/18iZjwQPEd/",
-    tags: ["Bake"],
+    tags: ["Broccoli", "Cauliflower", "Bell Pepper", "Bake"],
     ingredients: ["Broccoli", "Cauliflower", "Olive Oil", "Onion", "Red Bell Pepper", "3 Eggs", "320ml Milk", "95g Flour", "Parmesan Cheese", "1 tsp Paprika", "1 tsp Garlic Powder", "Salt & Pepper", "Parsley", "Mozzarella Cheese"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4552277205000869%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Vegan Lentil Burger Tacos",
     link: "https://www.facebook.com/share/r/1LHtcbc5fa/",
-    tags: ["Green Lentils", "Burgers", "Tacos"],
+    tags: ["Green Lentils", "Lentils", "Carrots", "Burgers", "Tacos"],
     ingredients: ["200g Green Lentils", "Onion", "Potatoes", "Carrot", "Parsley", "1 tsp Paprika", "1 tsp Cumin", "Salt", "250g Oat Flour"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F971847305489292%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Spinach & Mushroom Zucchini Lasagna Bake",
     link: "https://www.facebook.com/reel/1017899374132791",
-    tags: ["Spinach", "Mushrooms", "Zucchini", "Bake"],
+    tags: ["Spinach", "Mushrooms", "Zucchini", "Lasagna", "Bake"],
     ingredients: ["2 Zucchini", "Olive Oil", "2 Scallions", "225g Spinach", "Salt & Pepper", "280g Mushrooms", "Garlic Powder", "Onion Powder", "Mozzarella Cheese", "Breadcrumbs", "Parmesan Cheese", "Italian Herbs"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1017899374132791%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Chickpea Banana Cookies",
     link: "https://www.facebook.com/share/r/1TJagSJgH2/",
-    tags: ["Chickpeas", "Cookies", "Dessert"],
+    tags: ["Chickpeas", "Banana", "Cookies", "Dessert"],
     ingredients: ["1 & 1/2 Cups Chickpeas", "2 Bananas", "1/3 Cup Maple Syrup", "3 tbsp Peanut Butter", "1 & 1/3 cup Almond Flour", "1 tsp Baking Soda", "1 tsp Vanilla Extract", "Salt", "80g Chocolate"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1505863757908610%2F&show_text=false&width=267&t=0"
   },
@@ -407,13 +407,13 @@ const recipeData = [
   {
     name: "Red Lentil Pizza",
     link: "https://www.facebook.com/share/r/18xVB53G47/",
-    tags: ["Pizza", "Red Lentils", "Bake"],
+    tags: ["Pizza", "Red Lentils", "Lentils", "Bake"],
     ingredients: ["100g Red Lentils", "2 Tbsp Tomato Sauce", "60g Low Fat Shredded Cheese", "1/2 Red Onion", "Paprika", "Salt & pepper"]
   },
   {
     name: "Veggie Flatbread",
     link: "https://www.facebook.com/share/r/1H6rAaFPpM/",
-    tags: ["Bread", "Bake", "Zucchini"],
+    tags: ["Zucchini", "Potato", "Bread", "Bake", "Zucchini"],
     ingredients: ["2 Zucchini", "1 Potato", "1 Cup Cherry Tomatoes", "1 Red Onion", "2.5 Cups Flour", "Olive Oil", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F949816537666404%2F&show_text=false&width=267&t=0"
   },
@@ -434,21 +434,21 @@ const recipeData = [
   {
     name: "Lentil Bread",
     link: "https://www.facebook.com/share/r/1D4sAxG1NX/",
-    tags: ["Bread", "Bake", "Red Lentils"],
+    tags: ["Bread", "Bake", "Red Lentils", "Lentils"],
     ingredients: ["150g red lentils", "2 tbsp extra virgin olive oil ", "2 tbsp yoghurt ", "1 tsp salt", "1 tsp paprika ", "1 tsp garlic powder ", "1 tsp mixed herbs", "1 tsp baking powder", "20g psyllium husk powder"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1253156930302099%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Chickpea Crust Pizza",
     link: "https://www.facebook.com/share/r/1Ks8sMQThT/",
-    tags: ["Chickpeas"],
+    tags: ["Chickpeas", "Pizza", "Bake"],
     ingredients: ["90g Chickpeas", "1/2 cup sour cream or yogurt", "1 egg", "Salt", "olive oil", "1/2 tsp. baking powder", "tomato sauce", "oregano", "shredded mozzarella ", "black olives", "Basil"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F977215734965633%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Creamy Potato Dal",
     link: "https://www.facebook.com/share/r/197g3QzTYA/",
-    tags: ["Red Lentils", "Potatoes", "Curry"],
+    tags: ["Red Lentils", "Lentils", "Potatoes", "Curry"],
     ingredients: ["200g red lentils", "olive oil", "cumin seeds", "onion", "garlic", "ginger ", "curry powder", "canned tomatoes", "potatoes", "Vegetable stock", "coconut milk", "Coriander", "3 limes"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1288588483453033%2F&show_text=false&width=267&t=0"
   },
@@ -461,14 +461,14 @@ const recipeData = [
   {
     name: "Veggie Cabbage Lasagna",
     link: "https://www.facebook.com/share/r/1EBsvVsX5G/",
-    tags: ["Cabbage", "Lasagna"],
+    tags: ["Cabbage", "Lasagna", "Mushrooms", "Carrot", "Zucchini"],
     ingredients: ["1 medium cabbage", "Cream Cheese", "olive oil", "garlic", "onion", "mushrooms", "carrot", "zucchini", "Italian seasoning", "Salt & Pepper", "1/4 cup marinara sauce", "Basil"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F924983697108275%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Baked Oats",
     link: "https://www.facebook.com/share/r/1A2iWdVZpw/",
-    tags: ["Oats", "Bake"],
+    tags: ["Oats", "Carrots", "Bake"],
     ingredients: ["60g rolled oats", "50g grated carrot", "200g Greek yoghurt", "2  eggs", "agave/maple syrup", "almonds", "cinnamon", "baking powder"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0"
   }
