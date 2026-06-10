@@ -175,14 +175,14 @@ const recipeData = [
   {
     name: "Spinach Feta Puff Pastry",
     link: "https://www.facebook.com/reel/24439419079016468",
-    tags: ["Spinach", "Feta Cheese", "Pastry", "Bake"],
+    tags: ["Spinach", "Pastry", "Bake"],
     ingredients: ["275 g Puff Pastry", "Garlic", "350 g Frozen Spinach", "100g Feta Cheese", "100g Gouda Cheese", "1 Egg", "Salt & Pepper", "1 Egg for Brushing", "125g Mozzarella", "White & Black Sesame Seeds"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24439419079016468%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Minestrone",
     link: "https://www.facebook.com/reel/1833903350559898",
-    tags: ["Soup", "Carrot", "Potatoes", "Barley"],
+    tags: ["Soup", "Carrots", "Potatoes", "Barley"],
     ingredients: ["Olive Oil", "Onion", "Carrot", "Celery", "Potatoes", "Canned Tomatoes", "1 Can Red Kidney Beans", "100g Pearl Barley", "Parsley", "Basil", "Parmesan Cheese"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1833903350559898%2F&show_text=false&width=267&t=0"
   },
@@ -196,7 +196,7 @@ const recipeData = [
   {
     name: "Dragon Tofu",
     link: "https://www.facebook.com/reel/1247205270759892",
-    tags: ["Tofu", "Bell Peppers"],
+    tags: ["Tofu", "Bell Pepper"],
     ingredients: ["Tofu", "Salt & Pepper", "1 Egg", "Cornflour", "Green/Red/Orange Bell Peppers", "Garlic", "Ginger", "Onion", "Cashew Nuts", "Ketchup", "Soy Sauce", "Red Chilli Sauce", "Honey", "Spring Onion"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fnotacookofficial%2Fvideos%2F1247205270759892%2F&show_text=false&width=267&t=0"
   },
@@ -337,7 +337,7 @@ const recipeData = [
   {
     name: "Spinach & Feta Puff Pastry Rolls",
     link: "https://www.facebook.com/reel/867033888981430",
-    tags: ["Puff Pastry", "Feta Cheese", "Bake"],
+    tags: ["Puff Pastry", "Bake"],
     ingredients: ["200g Feta Cheese", "120g Spinach", "1 Egg", "Salt & Pepper", "340g Puff Pastry", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F867033888981430%2F&show_text=false&width=267&t=0"
   },
@@ -413,7 +413,7 @@ const recipeData = [
   {
     name: "Veggie Flatbread",
     link: "https://www.facebook.com/share/r/1H6rAaFPpM/",
-    tags: ["Zucchini", "Potato", "Bread", "Bake", "Zucchini"],
+    tags: ["Zucchini", "Potatoes", "Bread", "Bake", "Zucchini"],
     ingredients: ["2 Zucchini", "1 Potato", "1 Cup Cherry Tomatoes", "1 Red Onion", "2.5 Cups Flour", "Olive Oil", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F949816537666404%2F&show_text=false&width=267&t=0"
   },
@@ -461,7 +461,7 @@ const recipeData = [
   {
     name: "Veggie Cabbage Lasagna",
     link: "https://www.facebook.com/share/r/1EBsvVsX5G/",
-    tags: ["Cabbage", "Lasagna", "Mushrooms", "Carrot", "Zucchini"],
+    tags: ["Cabbage", "Lasagna", "Mushrooms", "Carrots", "Zucchini"],
     ingredients: ["1 medium cabbage", "Cream Cheese", "olive oil", "garlic", "onion", "mushrooms", "carrot", "zucchini", "Italian seasoning", "Salt & Pepper", "1/4 cup marinara sauce", "Basil"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F924983697108275%2F&show_text=false&width=267&t=0"
   },
