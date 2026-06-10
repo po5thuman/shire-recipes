@@ -6,7 +6,6 @@
     <title>The Shire - Recipe Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Inline script to prevent screen flickering on slow connections
         tailwind.config = {
             darkMode: 'class'
         }
@@ -55,6 +54,12 @@
 
             <main id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start"></main>
         
+            <div id="load-more-container" class="mt-12 mb-6 text-center hidden">
+                <button onclick="loadMoreRecipes()" class="inline-flex items-center gap-2 bg-white dark:bg-stone-900 text-emerald-800 dark:text-emerald-400 font-bold px-6 py-3 border border-stone-200 dark:border-stone-800 rounded-xl shadow-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition focus:outline-none">
+                    <span>📜</span> See More Provisions
+                </button>
+            </div>
+
             <div id="empty-state" class="hidden text-center py-16 bg-white dark:bg-stone-900 rounded-xl border border-dashed border-stone-200 dark:border-stone-800">
                 <span class="text-4xl block mb-2">📜</span>
                 <h3 class="text-lg font-bold text-stone-700 dark:text-stone-300">Not all those who wander are lost...</h3>
@@ -68,6 +73,10 @@
     
     <script>
         const selectedTags = new Set();
+        
+        // Pagination State Variables
+        let recipesVisibleLimit = 42; 
+        const itemsToAppend = 9;
 
         // Theme Toggle Handler
         function updateThemeUI() {
@@ -86,7 +95,6 @@
             updateThemeUI();
         }
 
-        // Run initially to set proper icon
         updateThemeUI();
 
         // 1. Extract unique tags and build the sidebar filter menu
@@ -114,10 +122,17 @@
             return recipeData.filter(r => r.tags.includes(tag)).length;
         }
 
-        // 2. Render Recipes based on current active tags
+        // Incremental Pagination Loop Handler
+        function loadMoreRecipes() {
+            recipesVisibleLimit += itemsToAppend;
+            renderRecipes();
+        }
+
+        // 2. Render Recipes based on current active tags and active slice limit
         function renderRecipes() {
             const grid = document.getElementById('recipes-grid');
             const emptyState = document.getElementById('empty-state');
+            const loadMoreBar = document.getElementById('load-more-container');
             grid.innerHTML = ''; 
 
             const filteredRecipes = recipeData.filter(recipe => {
@@ -128,13 +143,24 @@
             if (filteredRecipes.length === 0) {
                 grid.className = "hidden";
                 emptyState.classList.remove('hidden');
+                loadMoreBar.classList.add('hidden');
                 return;
             } else {
                 grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start";
                 emptyState.classList.add('hidden');
             }
 
-            filteredRecipes.forEach((recipe, index) => {
+            // Slice out only what the user is currently permitted to view
+            const paginatedRecipes = filteredRecipes.slice(0, recipesVisibleLimit);
+
+            // Conditional rendering logic to hide or display the "See More" provision trigger
+            if (filteredRecipes.length > recipesVisibleLimit) {
+                loadMoreBar.classList.remove('hidden');
+            } else {
+                loadMoreBar.classList.add('hidden');
+            }
+
+            paginatedRecipes.forEach((recipe, index) => {
                 const card = document.createElement('div');
                 card.className = "bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-5 flex flex-col justify-between transition transform hover:shadow-md";
                 
@@ -211,6 +237,9 @@
             const checkbox = document.getElementById(`check-${tag}`);
             const label = document.getElementById(`label-${tag}`);
 
+            // Reset pagination limit back to baseline whenever filters modify the layout grid context
+            recipesVisibleLimit = 42;
+
             if (checkbox.checked) {
                 selectedTags.add(tag);
                 label.className = "flex items-center justify-between w-full px-3 py-2 rounded-lg text-sm font-bold cursor-pointer transition bg-emerald-50 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/60 select-none";
@@ -252,6 +281,7 @@
         }
 
         function clearAllFilters() {
+            recipesVisibleLimit = 42; // Reset view windows
             selectedTags.forEach(tag => {
                 document.getElementById(`check-${tag}`).checked = false;
             });
