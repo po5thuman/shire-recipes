@@ -141,14 +141,12 @@
     <script>
         const selectedTags = new Set();
         
-        // Dynamic state handlers
         let currentLayout = "grid"; 
         let searchQuery = "";
         let matchAllLogic = true;
         let recipesVisibleLimit = 42; 
         const itemsToAppend = 9;
 
-        // Theme Toggle Handler
         function updateThemeUI() {
             const isDark = document.documentElement.classList.contains('dark');
             document.getElementById('theme-icon').innerText = isDark ? '☀️' : '🌙';
@@ -167,7 +165,6 @@
 
         updateThemeUI();
 
-        // Scroll Visibility Logic for Back to Top Button
         const topBtn = document.getElementById('back-to-top');
         window.onscroll = function() {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -186,7 +183,6 @@
             });
         }
 
-        // 1. Extract unique tags and build the sidebar filter menu
         const allTags = new Set();
         recipeData.forEach(recipe => recipe.tags.forEach(tag => allTags.add(tag)));
         
@@ -284,7 +280,6 @@
             }, 100);
         }
 
-        // 2. Render Recipes incorporating view mode modifiers and micro-interactions
         function renderRecipes() {
             const grid = document.getElementById('recipes-grid');
             const emptyState = document.getElementById('empty-state');
@@ -342,6 +337,17 @@
                     ? recipe.ingredients.map(ing => `<li class="flex items-center gap-2">🌿 ${ing}</li>`).join('')
                     : '<li>No ingredients listed.</li>';
 
+                // Core Macro UI Interpolation Logic Builder
+                let macrosHTML = '';
+                if (recipe.calories || recipe.protein) {
+                    macrosHTML = `
+                        <div class="flex items-center gap-2 mt-1 mb-2.5 text-[11px] font-bold tracking-wide uppercase text-stone-500 dark:text-stone-400">
+                            ${recipe.calories ? `<span class="bg-stone-100 dark:bg-stone-800/80 px-2 py-0.5 rounded border border-stone-200/40 dark:border-stone-700/30">🔥 ${recipe.calories} kcal</span>` : ''}
+                            ${recipe.protein ? `<span class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 px-2 py-0.5 rounded border border-emerald-100/40 dark:border-emerald-900/30">💪 ${recipe.protein}g Protein</span>` : ''}
+                        </div>
+                    `;
+                }
+
                 let videoEmbedHTML = '';
                 
                 if (recipe.embedUrl && recipe.embedUrl.trim() !== "") {
@@ -373,14 +379,15 @@
                 }
 
                 if (currentLayout === 'grid') {
-                    // Micro-interaction additions: hover:-translate-y-1 hover:shadow-md duration-300
                     card.className = "grid-card-item bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-5 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md";
                     card.innerHTML = `
                         <div>
-                            <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 dark:text-stone-100 text-lg mb-2 flex justify-between items-center group focus:outline-none">
+                            <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 dark:text-stone-100 text-lg mb-1 flex justify-between items-center group focus:outline-none">
                                 <span class="group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition-colors duration-200">${recipe.name}</span>
                                 <span id="arrow-${index}" class="text-stone-400 dark:text-stone-500 transition-transform duration-300 text-sm transform origin-center">▼</span>
                             </button>
+                            
+                            ${macrosHTML}
                             
                             <div class="flex flex-wrap gap-1.5 mb-2">
                                 ${tagsHTML}
@@ -396,15 +403,19 @@
                         </div>
                     `;
                 } else {
-                    // Micro-interaction additions: hover:translate-x-1 hover:border-emerald-600/30 duration-200
                     card.className = "list-row-item bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-3.5 transition-all duration-200 transform hover:translate-x-1 hover:border-emerald-600/30 dark:hover:border-emerald-500/30";
                     card.innerHTML = `
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                            <button onclick="toggleIngredients(${index})" class="text-left font-bold text-stone-900 dark:text-stone-100 text-base flex items-center gap-2 group focus:outline-none flex-1">
-                                <span id="arrow-${index}" class="text-stone-400 dark:text-stone-500 transition-transform duration-300 text-xs transform origin-center">▼</span>
-                                <span class="group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition-colors duration-200">${recipe.name}</span>
-                            </button>
-                            <div class="flex flex-wrap gap-1.5 sm:justify-end">
+                            <div class="flex-1">
+                                <button onclick="toggleIngredients(${index})" class="text-left font-bold text-stone-900 dark:text-stone-100 text-base flex items-center gap-2 group focus:outline-none">
+                                    <span id="arrow-${index}" class="text-stone-400 dark:text-stone-500 transition-transform duration-300 text-xs transform origin-center">▼</span>
+                                    <span class="group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition-colors duration-200">${recipe.name}</span>
+                                </button>
+                                <div class="ml-5 mt-0.5">
+                                    ${macrosHTML}
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 sm:justify-end items-center">
                                 ${recipe.tags.map(t => `<span class="bg-stone-50 dark:bg-stone-950 border border-stone-200/40 dark:border-stone-800 text-stone-500 dark:text-stone-400 text-[11px] px-2 py-0.5 rounded-md font-medium transition-colors duration-200">${t}</span>`).join('')}
                             </div>
                         </div>
@@ -474,6 +485,7 @@
             toggleTagFilter(tag);
         }
 
+        // Safeguard flusher module sequence
         function clearAllFilters() {
             recipesVisibleLimit = 42; 
             searchQuery = "";
@@ -492,7 +504,6 @@
             renderRecipes();
         }
 
-        // Updated smooth rotation handler
         function toggleIngredients(index) {
             const panel = document.getElementById(`ingredients-${index}`);
             const arrow = document.getElementById('arrow-' + index);
