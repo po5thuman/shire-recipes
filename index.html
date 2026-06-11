@@ -61,19 +61,28 @@
 
         <div class="flex-1">
             
-            <div class="relative mb-6">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-stone-400 pointer-events-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </span>
-                <input 
-                    type="text" 
-                    id="search-box" 
-                    oninput="handleSearchInput()" 
-                    placeholder="Search provisions by recipe title..." 
-                    class="w-full pl-11 pr-4 py-3 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl shadow-sm placeholder-stone-400 dark:placeholder-stone-500 font-medium text-sm text-stone-800 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-emerald-700 dark:focus:ring-emerald-500/50 focus:border-transparent transition-all duration-200"
-                />
+            <div class="relative mb-6 flex gap-2">
+                <div class="relative flex-1">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-stone-400 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </span>
+                    <input 
+                        type="text" 
+                        id="search-box" 
+                        oninput="handleSearchInput()" 
+                        placeholder="Search provisions by recipe title..." 
+                        class="w-full pl-11 pr-12 py-3 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl shadow-sm placeholder-stone-400 dark:placeholder-stone-500 font-medium text-sm text-stone-800 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-emerald-700 dark:focus:ring-emerald-500/50 focus:border-transparent transition-all duration-200"
+                    />
+                    <button 
+                        onclick="selectRandomRecipe()" 
+                        class="absolute inset-y-0 right-0 pr-4 flex items-center text-lg hover:scale-125 transition-transform duration-200 active:rotate-45 focus:outline-none" 
+                        title="Surprise Me with a Random Provision! 🎲"
+                    >
+                        🎲
+                    </button>
+                </div>
             </div>
 
             <div id="active-chips-bar" class="flex flex-wrap items-center gap-2 mb-6 hidden">
@@ -179,7 +188,7 @@
         }
 
         function loadMoreRecipes() {
-            recipesVisibleLimit += itemsToAppend;
+            recipesVisibleLimit = recipeData.length; // Max out view buffer context if user requests expansions
             renderRecipes();
         }
 
@@ -189,11 +198,60 @@
             renderRecipes();
         }
 
-        // Text Search Tracker
         function handleSearchInput() {
             searchQuery = document.getElementById('search-box').value.trim().toLowerCase();
-            recipesVisibleLimit = 42; // Reset viewport index whenever text query shifts
+            recipesVisibleLimit = 42; 
             renderRecipes();
+        }
+
+        // Random Selection Controller Module
+        function selectRandomRecipe() {
+            if (!recipeData || recipeData.length === 0) return;
+            
+            // Step A: Fully flush all searching state parameters to preserve matching lookup indexing array contexts
+            searchQuery = "";
+            document.getElementById('search-box').value = "";
+            selectedTags.forEach(tag => {
+                document.getElementById(`check-${tag}`).checked = false;
+            });
+            selectedTags.clear();
+            
+            const labels = filterContainer.querySelectorAll('label');
+            labels.forEach(lbl => {
+                lbl.className = "flex items-center justify-between w-full px-3 py-2 rounded-lg text-sm text-stone-600 dark:text-stone-400 font-medium cursor-pointer transition hover:bg-stone-50 dark:hover:bg-stone-800 select-none border border-transparent";
+            });
+            updateChipsBar();
+
+            // Step B: Set render limits to max so the target card is guaranteed to be rendered in the DOM window
+            recipesVisibleLimit = recipeData.length;
+            renderRecipes();
+
+            // Step C: Generate random index key alignment parameter match arrays
+            const randomIndex = Math.floor(Math.random() * recipeData.length);
+            
+            // Step D: Target target layout DOM context selectors explicitly
+            const panel = document.getElementById(`ingredients-${randomIndex}`);
+            const arrow = document.getElementById(`arrow-${randomIndex}`);
+            
+            // Step E: Trigger explicit visibility drop window parameters
+            if (panel && panel.classList.contains('hidden')) {
+                panel.classList.remove('hidden');
+                if (arrow) arrow.style.transform = 'rotate(180deg)';
+            }
+
+            // Step F: Smooth scroll straight down to viewport coordinate alignments
+            setTimeout(() => {
+                const cardElement = panel.closest('.bg-white');
+                if (cardElement) {
+                    cardElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Visual highlight flash interaction animation hook
+                    cardElement.classList.add('ring-2', 'ring-emerald-700', 'dark:ring-emerald-500');
+                    setTimeout(() => {
+                        cardElement.classList.remove('ring-2', 'ring-emerald-700', 'dark:ring-emerald-500');
+                    }, 1500);
+                }
+            }, 100);
         }
 
         // 2. Render Recipes incorporating logic states and string evaluation matches
@@ -205,11 +263,9 @@
             grid.innerHTML = ''; 
 
             const filteredRecipes = recipeData.filter(recipe => {
-                // Step A: Name string search evaluation
                 const matchesSearch = recipe.name.toLowerCase().includes(searchQuery);
                 if (!matchesSearch) return false;
 
-                // Step B: Tag evaluation routing logic
                 if (selectedTags.size === 0) return true;
                 
                 if (matchAllLogic) {
@@ -245,7 +301,7 @@
 
             paginatedRecipes.forEach((recipe, index) => {
                 const card = document.createElement('div');
-                card.className = "bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-5 flex flex-col justify-between transition transform hover:shadow-md";
+                card.className = "bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-5 flex flex-col justify-between transition transform hover:shadow-md duration-300";
                 
                 const tagsHTML = recipe.tags.map(t => `<span class="bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xs px-2.5 py-1 rounded-md font-semibold">${t}</span>`).join(' ');
                 
@@ -315,7 +371,6 @@
             `;
         }
 
-        // 3. Handle toggling selections on/off
         function toggleTagFilter(tag) {
             const checkbox = document.getElementById(`check-${tag}`);
             const label = document.getElementById(`label-${tag}`);
@@ -334,7 +389,6 @@
             renderRecipes();
         }
 
-        // 4. Update visual chips
         function updateChipsBar() {
             const bar = document.getElementById('active-chips-bar');
             const container = document.getElementById('chips-container');
@@ -365,7 +419,7 @@
         function clearAllFilters() {
             recipesVisibleLimit = 42; 
             searchQuery = "";
-            document.getElementById('search-box').value = ""; // Flush input element literal
+            document.getElementById('search-box').value = ""; 
             selectedTags.forEach(tag => {
                 document.getElementById(`check-${tag}`).checked = false;
             });
@@ -380,7 +434,6 @@
             renderRecipes();
         }
 
-        // 5. Toggle Card Dropdowns
         function toggleIngredients(index) {
             const panel = document.getElementById(`ingredients-${index}`);
             const arrow = document.getElementById(`arrow-${index}`);
@@ -394,7 +447,6 @@
             }
         }
 
-        // 6. Mobile Drawer Toggle Logic
         function toggleMobileFilters() {
             const sidebar = document.getElementById('filter-sidebar');
             const btnText = document.getElementById('mobile-filter-btn-text');
