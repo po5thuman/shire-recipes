@@ -61,7 +61,7 @@
 
         <div class="flex-1">
             
-            <div class="relative mb-6 flex gap-2">
+            <div class="relative mb-6 flex flex-col sm:flex-row gap-3">
                 <div class="relative flex-1">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-stone-400 pointer-events-none">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -83,6 +83,29 @@
                         🎲
                     </button>
                 </div>
+
+                <div class="flex bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl p-1 shadow-sm shrink-0 self-end sm:self-auto justify-center">
+                    <button 
+                        id="btn-grid-view" 
+                        onclick="changeLayoutView('grid')" 
+                        class="p-2 rounded-lg bg-stone-100 dark:bg-stone-800 text-emerald-800 dark:text-emerald-400 transition focus:outline-none" 
+                        title="Grid View"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                        </svg>
+                    </button>
+                    <button 
+                        id="btn-list-view" 
+                        onclick="changeLayoutView('list')" 
+                        class="p-2 rounded-lg text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition focus:outline-none" 
+                        title="Compact List View"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <div id="active-chips-bar" class="flex flex-wrap items-center gap-2 mb-6 hidden">
@@ -90,7 +113,7 @@
                 <div id="chips-container" class="flex flex-wrap gap-1.5"></div>
             </div>
 
-            <main id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start"></main>
+            <main id="recipes-grid" class="items-start"></main>
         
             <div id="load-more-container" class="mt-12 mb-6 text-center hidden">
                 <button onclick="loadMoreRecipes()" class="inline-flex items-center gap-2 bg-white dark:bg-stone-900 text-emerald-800 dark:text-emerald-400 font-bold px-6 py-3 border border-stone-200 dark:border-stone-800 rounded-xl shadow-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition focus:outline-none">
@@ -119,6 +142,7 @@
         const selectedTags = new Set();
         
         // Dynamic state handlers
+        let currentLayout = "grid"; // Can be 'grid' or 'list'
         let searchQuery = "";
         let matchAllLogic = true;
         let recipesVisibleLimit = 42; 
@@ -188,7 +212,7 @@
         }
 
         function loadMoreRecipes() {
-            recipesVisibleLimit = recipeData.length; // Max out view buffer context if user requests expansions
+            recipesVisibleLimit = recipeData.length; 
             renderRecipes();
         }
 
@@ -204,11 +228,26 @@
             renderRecipes();
         }
 
-        // Random Selection Controller Module
+        // Layout Control State Engine
+        function changeLayoutView(viewMode) {
+            currentLayout = viewMode;
+            
+            const btnGrid = document.getElementById('btn-grid-view');
+            const btnList = document.getElementById('btn-list-view');
+            
+            if (viewMode === 'grid') {
+                btnGrid.className = "p-2 rounded-lg bg-stone-100 dark:bg-stone-800 text-emerald-800 dark:text-emerald-400 transition focus:outline-none";
+                btnList.className = "p-2 rounded-lg text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition focus:outline-none";
+            } else {
+                btnList.className = "p-2 rounded-lg bg-stone-100 dark:bg-stone-800 text-emerald-800 dark:text-emerald-400 transition focus:outline-none";
+                btnGrid.className = "p-2 rounded-lg text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition focus:outline-none";
+            }
+            renderRecipes();
+        }
+
         function selectRandomRecipe() {
             if (!recipeData || recipeData.length === 0) return;
             
-            // Step A: Fully flush all searching state parameters to preserve matching lookup indexing array contexts
             searchQuery = "";
             document.getElementById('search-box').value = "";
             selectedTags.forEach(tag => {
@@ -222,30 +261,22 @@
             });
             updateChipsBar();
 
-            // Step B: Set render limits to max so the target card is guaranteed to be rendered in the DOM window
             recipesVisibleLimit = recipeData.length;
             renderRecipes();
 
-            // Step C: Generate random index key alignment parameter match arrays
             const randomIndex = Math.floor(Math.random() * recipeData.length);
-            
-            // Step D: Target target layout DOM context selectors explicitly
             const panel = document.getElementById(`ingredients-${randomIndex}`);
             const arrow = document.getElementById(`arrow-${randomIndex}`);
             
-            // Step E: Trigger explicit visibility drop window parameters
             if (panel && panel.classList.contains('hidden')) {
                 panel.classList.remove('hidden');
                 if (arrow) arrow.style.transform = 'rotate(180deg)';
             }
 
-            // Step F: Smooth scroll straight down to viewport coordinate alignments
             setTimeout(() => {
-                const cardElement = panel.closest('.bg-white');
+                const cardElement = panel.closest('.bg-white, .list-row-item');
                 if (cardElement) {
                     cardElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    
-                    // Visual highlight flash interaction animation hook
                     cardElement.classList.add('ring-2', 'ring-emerald-700', 'dark:ring-emerald-500');
                     setTimeout(() => {
                         cardElement.classList.remove('ring-2', 'ring-emerald-700', 'dark:ring-emerald-500');
@@ -254,7 +285,7 @@
             }, 100);
         }
 
-        // 2. Render Recipes incorporating logic states and string evaluation matches
+        // 2. Render Recipes incorporating view mode modifiers
         function renderRecipes() {
             const grid = document.getElementById('recipes-grid');
             const emptyState = document.getElementById('empty-state');
@@ -287,8 +318,13 @@
                 loadMoreBar.classList.add('hidden');
                 return;
             } else {
-                grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start";
                 emptyState.classList.add('hidden');
+                // Dynamically route layout architecture rules
+                if (currentLayout === 'grid') {
+                    grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start";
+                } else {
+                    grid.className = "flex flex-col gap-3 max-w-4xl";
+                }
             }
 
             const paginatedRecipes = filteredRecipes.slice(0, recipesVisibleLimit);
@@ -301,7 +337,6 @@
 
             paginatedRecipes.forEach((recipe, index) => {
                 const card = document.createElement('div');
-                card.className = "bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-5 flex flex-col justify-between transition transform hover:shadow-md duration-300";
                 
                 const tagsHTML = recipe.tags.map(t => `<span class="bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xs px-2.5 py-1 rounded-md font-semibold">${t}</span>`).join(' ');
                 
@@ -324,12 +359,12 @@
                 } else if (recipe.link && (recipe.link.includes('youtube.com/watch') || recipe.link.includes('youtu.be/'))) {
                     let videoId = recipe.link.includes('youtu.be/') ? recipe.link.split('/').pop() : new URL(recipe.link).searchParams.get('v');
                     videoEmbedHTML = `
-                        <div class="mt-4 rounded-lg overflow-hidden border border-stone-200 dark:border-stone-800 aspect-video">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                        <div class="mt-4 rounded-lg overflow-hidden border border-stone-200 dark:border-stone-800 aspect-video max-w-md">
+                            <iframe class="w-full h-full aspect-video" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
                         </div>`;
                 } else if (recipe.link) {
                     videoEmbedHTML = `
-                        <div class="mt-4">
+                        <div class="mt-4 max-w-xs">
                             <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-1.5">Recipe Video:</h4>
                             <a href="${recipe.link}" target="_blank" class="group/video block relative rounded-lg overflow-hidden border border-dashed border-emerald-300 dark:border-emerald-700 bg-emerald-50/40 dark:bg-emerald-950/20 p-4 text-center transition hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:border-emerald-400">
                                 <div class="text-2xl mb-1">🎬</div>
@@ -339,26 +374,51 @@
                         </div>`;
                 }
 
-                card.innerHTML = `
-                    <div>
-                        <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 dark:text-stone-100 text-lg mb-2 flex justify-between items-center group focus:outline-none">
-                            <span class="group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition">${recipe.name}</span>
-                            <span id="arrow-${index}" class="text-stone-400 dark:text-stone-500 transition-transform duration-200 text-sm">▼</span>
-                        </button>
-                        
-                        <div class="flex flex-wrap gap-1.5 mb-2">
-                            ${tagsHTML}
-                        </div>
+                // Layout architecture formatting logic switch block
+                if (currentLayout === 'grid') {
+                    card.className = "bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-5 flex flex-col justify-between transition transform hover:shadow-md duration-300";
+                    card.innerHTML = `
+                        <div>
+                            <button onclick="toggleIngredients(${index})" class="w-full text-left font-bold text-stone-900 dark:text-stone-100 text-lg mb-2 flex justify-between items-center group focus:outline-none">
+                                <span class="group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition">${recipe.name}</span>
+                                <span id="arrow-${index}" class="text-stone-400 dark:text-stone-500 transition-transform duration-200 text-sm">▼</span>
+                            </button>
+                            
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                ${tagsHTML}
+                            </div>
 
-                        <div id="ingredients-${index}" class="hidden border-t border-stone-100 dark:border-stone-800/80 pt-3 mt-3">
+                            <div id="ingredients-${index}" class="hidden border-t border-stone-100 dark:border-stone-800/80 pt-3 mt-3">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-2">Ingredients:</h4>
+                                <ul class="text-sm text-stone-600 dark:text-stone-400 space-y-1 mb-2">
+                                    ${ingredientsHTML}
+                                </ul>
+                                ${videoEmbedHTML}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // Compact Row List Architecture Template
+                    card.className = "list-row-item bg-white dark:bg-stone-900 rounded-xl shadow-sm border border-stone-100 dark:border-stone-800/60 overflow-hidden p-3.5 transition duration-200";
+                    card.innerHTML = `
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <button onclick="toggleIngredients(${index})" class="text-left font-bold text-stone-900 dark:text-stone-100 text-base flex items-center gap-2 group focus:outline-none flex-1">
+                                <span id="arrow-${index}" class="text-stone-400 dark:text-stone-500 transition-transform duration-200 text-xs">▼</span>
+                                <span class="group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition">${recipe.name}</span>
+                            </button>
+                            <div class="flex flex-wrap gap-1.5 sm:justify-end">
+                                ${recipe.tags.map(t => `<span class="bg-stone-50 dark:bg-stone-950 border border-stone-200/40 dark:border-stone-800 text-stone-500 dark:text-stone-400 text-[11px] px-2 py-0.5 rounded-md font-medium">${t}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div id="ingredients-${index}" class="hidden border-t border-stone-100 dark:border-stone-800/80 pt-3 mt-3 ml-5">
                             <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-2">Ingredients:</h4>
                             <ul class="text-sm text-stone-600 dark:text-stone-400 space-y-1 mb-2">
                                 ${ingredientsHTML}
                             </ul>
                             ${videoEmbedHTML}
                         </div>
-                    </div>
-                `;
+                    `;
+                }
                 grid.appendChild(card);
             });
         }
