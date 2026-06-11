@@ -43,7 +43,7 @@ const recipeData = [
   {
     name: "Aubergine & Quinoa Bowl",
     link: "https://www.facebook.com/share/r/1A5QNVuCFU/",
-    tags: ["Carrots", "Aubergine", "Quinoa"],
+    tags: ["Carrots", "Aubergine", "Quinoa", "Beans"],
     ingredients: ["Aubergines", "Onion", "Carrots", "Olive Oil", "Garlic", "Spices", "Canned Tomatoes", "Red Kidney Beans", "Vegetable Stock", "Soy Sauce", "Salt & Pepper", "Lemon Juice", "Cooked Quinoa", "Greek Yogurt"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F987784476751137%2F&show_text=false&width=267&t=0"
   },
@@ -71,14 +71,14 @@ const recipeData = [
   {
     name: "Butter Beans & Roasted Cauliflower",
     link: "https://www.facebook.com/reel/489467600445701",
-    tags: ["Cauliflower", "Butter Beans"],
+    tags: ["Cauliflower", "Butter Beans", "Beans"],
     ingredients: ["Cauliflower", "Harissa", "Olive Oil", "Cumin", "Coriander", "Onion", "Garlic", "Smoked Paprika", "Tomato Paste", "500 g Cherry Tomatoes", "2 cans Butter Beans", "Vegetable Broth", "Salt & Pepper", "Greek Yogurt", "Pomegranade Seeds", "Parsley"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F489467600445701%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Carrot & Butter Bean Dip",
     link: "https://www.facebook.com/reel/1303730294383083",
-    tags: ["Carrots", "Butter Beans", "Dip"],
+    tags: ["Carrots", "Butter Beans", "Beans", "Dip"],
     ingredients: ["Carrots", "Butter Beans", "Ground Turmeric", "Cumin Seeds", " Smoked Paprika", "Garlic", "Olive Oil", "Tahini", "Lemon Juice", "Salt & Pepper"],
   },
   {
@@ -91,7 +91,7 @@ const recipeData = [
   {
     name: "Bean and Sun-Dried Tomato Skillet",
     link: "https://www.facebook.com/reel/1703200250526981",
-    tags: ["Butter Beans"],
+    tags: ["Butter Beans", "Beans"],
     ingredients: ["Onion", "Garlic", "Tomato Paste", "Seasoning", "Cooking Cream/Coconut Cream", "Sundried Tomatoes", "Butter Beans", "Spinach"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1703200250526981%2F&show_text=false&width=267&t=0"
   },
@@ -126,7 +126,7 @@ const recipeData = [
   {
     name: "Smashed Potatoes with Beetroot Beans",
     link: "https://www.facebook.com/reel/1149304696381982",
-    tags: ["Potatoes", "Butter Beans", "Beetroot"],
+    tags: ["Potatoes", "Butter Beans", "Beans", "Beetroot"],
     ingredients: ["Potatoes", "Dill", "Beetroot", "Thyme", "Salt & Pepper", "1 tbsp Maple Syrup", "3 Medium Beetroots", " 2 Cans Butter Beans", "Garlic", "Tahini", "Lemon Juice", "Olive Oil", "Ground Cumin"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1149304696381982%2F&show_text=false&width=267&t=0"
   },
@@ -182,8 +182,8 @@ const recipeData = [
   {
     name: "Minestrone",
     link: "https://www.facebook.com/reel/1833903350559898",
-    tags: ["Soup", "Carrots", "Potatoes", "Barley"],
-    ingredients: ["Olive Oil", "Onion", "Carrot", "Celery", "Potatoes", "Canned Tomatoes", "1 Can Red Kidney Beans", "100g Pearl Barley", "Parsley", "Basil", "Parmesan Cheese"],
+    tags: ["Soup", "Carrots", "Potatoes", "Barley", "Beans", "Red Kidney Beans"],
+    ingredients: ["Olive Oil", "Onion", "Carrot", "Celery", "Potatoes", "Canned Tomatoes", "Can Red Kidney Beans", "100g Pearl Barley", "Parsley", "Basil", "Parmesan Cheese"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1833903350559898%2F&show_text=false&width=267&t=0"
   },
   {
@@ -217,7 +217,7 @@ const recipeData = [
   {
     name: "Tavče Gravče",
     link: "https://www.facebook.com/reel/2021740858657674",
-    tags: ["Cannellini Beans"],
+    tags: ["Cannellini Beans", "Beans"],
     ingredients: ["Cannellini Beans", "Salt & Pepper", "2 Onions", "Garlic", "Bay Leaves", "Dried Chillies", "Long Red Peppers", "Olive Oil", "Tomato Paste", "1 tsp Plain Flour", "1 tbsp Sweet Paprika", "Dried Mint"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2021740858657674%2F&show_text=false&width=267&t=0"
   },
@@ -331,13 +331,13 @@ const recipeData = [
   {
     name: "Golden Curry Meatballs",
     link: "https://www.facebook.com/share/r/19ZVC8wPTe/",
-    tags: ["Butter Beans", "Tofu"],
+    tags: ["Butter Beans", "Beans", "Tofu"],
     ingredients: ["Butter Beans", "Tofu", "Spring Onion", "Soy Sauce", "Breadcrumbs", "Onion", "Garlic", "Garam Masala", "Cream", "Curry Powder", "Lemon Juice", "Black & White Sesame Seeds", "Cooked Rice", "Spicy Oil"],
   },
   {
     name: "Spinach & Feta Puff Pastry Rolls",
     link: "https://www.facebook.com/reel/867033888981430",
-    tags: ["Puff Pastry", "Bake"],
+    tags: ["Pastry", "Bake"],
     ingredients: ["200g Feta Cheese", "120g Spinach", "1 Egg", "Salt & Pepper", "340g Puff Pastry", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F867033888981430%2F&show_text=false&width=267&t=0"
   },
@@ -566,7 +566,7 @@ const recipeData = [
   {
     name: "Chive Pesto & Feta Wreath",
     link: "https://www.facebook.com/reel/1322592283011674",
-    tags: ["Puff Pastry", "Bake"],
+    tags: ["Pastry", "Bake"],
     ingredients: ["Puff Pastry", "Pesto", "200g Feta Crumbled", "Sun Dried Tomatoes", "Garlic", "Egg For Brushing", "Sesame Seeds", "Honey", "Salt & Pepper"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1322592283011674%2F&show_text=false&width=267&t=0"
   },
@@ -587,7 +587,7 @@ const recipeData = [
   {
     name: "Pesto Twists",
     link: "https://www.facebook.com/reel/1491029399107996",
-    tags: ["Puff Pastry"],
+    tags: ["Pastry", "Bake"],
     ingredients: ["Puff Pastry", "Pesto", "Sun-Dried Tomato Pesto", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
     embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1491029399107996%2F&show_text=false&width=267&t=0"
   },
@@ -615,7 +615,7 @@ const recipeData = [
   {
     name: "Beans & Sausage Stew",
     link: "https://www.facebook.com/watch/?v=1834593933646837&rdid=6rE2RSc8RlP9OJSU",
-    tags: ["Cannellini Beans"],
+    tags: ["Cannellini Beans", "Beans"],
     ingredients: ["Cannellini Beans", "Onion", "Chili Pepper / Red Pepper Flakes", "Olive Oil", "1 Tbsp Tomato Paste", "Bay Leaf", "Cherry Tomatoes", "Sausage", "White Wine", "Salt", "Parsley"],
   },
   {
@@ -635,7 +635,7 @@ const recipeData = [
   {
     name: "Rajma Chawal Curry",
     link: "https://www.facebook.com/watch/?v=1659367317836042&rdid=YvX1fJ1WEj2X1O77",
-    tags: ["Kidney Beans", "Curry"],
+    tags: ["Kidney Beans", "Curry", "Beans"],
     ingredients: ["150g Kidney Beans", "Bay Leaf", "Cardamom Pods", "Salt", "5 Cup Water", "1 tbsp Ghee", "Cumin", "Cinnamon Stick", "Garlic", "Onions", "Ginger Paste", "Chilli", "Can Diced Tomatoes", "Turmeric", "Red Chilli Powder", "Coriander Powder", "Cumin Powder", "Garam Masala", "Salt", "Kasuri Methi", "Coriander", "Rice And Naan To Serve"],
   },
   {
