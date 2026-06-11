@@ -24,7 +24,11 @@
         </button>
 
         <h1 class="text-4xl font-extrabold text-emerald-800 dark:text-emerald-500 mb-2 tracking-wide">🏡 The Shire</h1>
-        <p class="text-stone-600 dark:text-stone-400 font-medium">"One vegetarian cookbook to rule them all, for Breakfast, Second Breakfast, and Elevenses."</p>
+        <p class="text-stone-600 dark:text-stone-400 font-medium mb-3">"One vegetarian cookbook to rule them all, for Breakfast, Second Breakfast, and Elevenses."</p>
+        
+        <div id="recipe-counter" class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-stone-200/60 dark:bg-stone-900 text-stone-500 dark:text-stone-400 border border-stone-300/40 dark:border-stone-800">
+            Loading total ledger...
+        </div>
     </header>
 
     <div class="max-w-7xl mx-auto px-4 mb-4 md:hidden">
@@ -156,12 +160,20 @@
             const grid = document.getElementById('recipes-grid');
             const emptyState = document.getElementById('empty-state');
             const loadMoreBar = document.getElementById('load-more-container');
+            const counterBadge = document.getElementById('recipe-counter');
             grid.innerHTML = ''; 
 
             const filteredRecipes = recipeData.filter(recipe => {
                 if (selectedTags.size === 0) return true;
                 return Array.from(selectedTags).every(tag => recipe.tags.includes(tag));
             });
+
+            // Dynamic Counter Display Update Logic
+            if (selectedTags.size === 0) {
+                counterBadge.innerText = `Total: ${recipeData.length} Recipes Available`;
+            } else {
+                counterBadge.innerText = `Showing ${filteredRecipes.length} of ${recipeData.length} Recipes`;
+            }
 
             if (filteredRecipes.length === 0) {
                 grid.className = "hidden";
