@@ -498,7 +498,6 @@ const recipeData = [
     link: "https://www.facebook.com/reel/808445575024502",
     tags: ["Cabbage", "Pasta"],
     ingredients: ["1/2 Cabbage", "Olive Oil", "Salt & Pepper", "Garlic", "Italian Seasoning", "Red Chili Flakes", "1 Cup Vegetable Broth", "1/2 Cup Heavy Cream", "1/2 Cup Sun-Dried Tomatoes", "1/2 Cup Parmesan", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F808445575024502%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Red Lentil Loaf",
@@ -526,7 +525,6 @@ const recipeData = [
     link: "https://www.facebook.com/reel/1276679827991647",
     tags: ["Red Lentils", "Lentils", "Curry"],
     ingredients: ["For The Dal:", "320g Red Lentils", "400ml Water", "800ml Coconut Milk", "1 tsp Turmeric", "1/2 tsp Cinnamon", "1/2 tsp Cayenne", "2 tsp Sea Salt", "Lemon Juice", "For The Temper:", "1/2 Onion", "2 Garlic Cloves", "1 Bunch Coriander", "1 tbsp Coconut Oil", "Curry Leaves", "1 tsp Mustard Seeds", "1 tsp Cumin Seeds", "1 tsp Curry Powder", "Crispy Onions", "Fresh Green Chilli", "Fresh Coriander"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1276679827991647%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Caramelized Onion Pasta",
@@ -561,7 +559,6 @@ const recipeData = [
     link: "https://www.facebook.com/reel/881748237838429",
     tags: ["Cabbage"],
     ingredients: ["Medium Cabbage", "Olive Oil", "Unsalted Butter", "1 Shallot", "Garlic Minced", "Vegetable Broth", "Heavy Cream", "Parmesan Cheese", "Chili Oil", "Dried Oregano", "Salt & Pepper", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F881748237838429%2F&show_text=false&width=267&t=0"
   },
   {
     name: "Chive Pesto & Feta Wreath",
