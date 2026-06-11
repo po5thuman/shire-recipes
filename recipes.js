@@ -4,653 +4,845 @@ const recipeData = [
     link: "https://www.facebook.com/share/r/1CjtfmMvH1/",
     tags: ["Zucchini"],
     ingredients: ["Zucchini", "Garlic", "Olive Oil", "Greek Yogurt", "Feta Cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1690375315067660%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1690375315067660%2F&show_text=false&width=267&t=0",
+    calories: 340,
+    protein: 14
   },
   {
     name: "Aubergine Lasagna",
     link: "https://www.facebook.com/share/r/16sxgB97QZ/",
     tags: ["Aubergine", "Lasagna"],
-    ingredients: ["2 aubergines", "garlic", "olive oil", "salt & pepper", "red onion", "1 tsp smoked paprika", "sundried tomatoes", "2 tbsp tomato purée", "1 tbsp balsamic vinegar", "2 x 400g tins plum tomatoes", "250g cooked puy lentils", "200ml water", "100g walnuts", "10g fresh oregano", "150ml plant-based cream", "8 dried lasagna sheets", "100g plant-based cheese"]
+    ingredients: ["2 aubergines", "garlic", "olive oil", "salt & pepper", "red onion", "1 tsp smoked paprika", "sundried tomatoes", "2 tbsp tomato purée", "1 tbsp balsamic vinegar", "2 x 400g tins plum tomatoes", "250g cooked puy lentils", "200ml water", "100g walnuts", "10g fresh oregano", "150ml plant-based cream", "8 dried lasagna sheets", "100g plant-based cheese"],
+    calories: 1850,
+    protein: 52
   },
   {
     name: "Quinoa Salad",
     link: "https://www.facebook.com/reel/1006490817927173/",
     tags: ["Quinoa", "Aubergine", "Salad"],
     ingredients: ["Aubergine", "Cherry Tomatoes", "Garlic", "Salt & Pepper", "Olive Oil", "Quinoa", "Lentils", "Jarred Pepper", "Sundried Tomatoes", "Cashews", "Lemon Juice"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1006490817927173%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1006490817927173%2F&show_text=false&width=267&t=0",
+    calories: 680,
+    protein: 22
   },
   {
     name: "Smashed Potato Salad",
     link: "https://www.facebook.com/share/r/19dUEAifSM/",
     tags: ["Potatoes", "Salad"],
     ingredients: ["Potatoes", "Olive Oil", "Salt & Pepper", "Yoghurt", "Mayonnaise", "Lemon Juice", "Dill", "Parsley", "Chives", "Red Onion", "Cucumber"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046748107390770%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046748107390770%2F&show_text=false&width=267&t=0",
+    calories: 580,
+    protein: 10
   },
   {
     name: "Borani",
     link: "https://www.facebook.com/reel/944165787786671/",
     tags: ["Aubergine", "Chickpeas"],
     ingredients: ["Aubergine", "Garlic", "Chick Peas", "Tomato Passata", "Spices", "Water", "Salt", "Sundried Tomatoes", "Greek Yoghurt", "Lemon Juice", "Dill", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F944165787786671%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F944165787786671%2F&show_text=false&width=267&t=0",
+    calories: 490,
+    protein: 19
   },
   {
     name: "Zucchini Pasta",
     link: "https://www.facebook.com/share/r/14DZfpZZKGz/",
     tags: ["Zucchini", "Pasta"],
     ingredients: ["Zucchini", "Onion", "Seasoning", "Olive Oil", "Cream Cheese", "Garlic", "Parmegian", "Basil", "Pasta Water", "Cooked Pasta"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F948013213951487%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F948013213951487%2F&show_text=false&width=267&t=0",
+    calories: 620,
+    protein: 18
   },
   {
     name: "Aubergine & Quinoa Bowl",
     link: "https://www.facebook.com/share/r/1A5QNVuCFU/",
     tags: ["Carrots", "Aubergine", "Quinoa", "Beans"],
     ingredients: ["Aubergines", "Onion", "Carrots", "Olive Oil", "Garlic", "Spices", "Canned Tomatoes", "Red Kidney Beans", "Vegetable Stock", "Soy Sauce", "Salt & Pepper", "Lemon Juice", "Cooked Quinoa", "Greek Yogurt"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F987784476751137%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F987784476751137%2F&show_text=false&width=267&t=0",
+    calories: 710,
+    protein: 28
   },
   {
     name: "Cauliflower Steak",
     link: "https://www.facebook.com/reel/822499086586346/",
     tags: ["Cauliflower"],
     ingredients: ["Large Cauliflower", "Garlic", "4 Large Carrots", "1 tsp Cumin/Paprika/Oregano", "1/2 tsp Sumac", "Olive Oil", "Salt & Pepper", "Tahini", "Water", "Lemon Juice", "1 tsp Miso", "Harissa Paste", "Olive Oil", "Parsely"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F822499086586346%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F822499086586346%2F&show_text=false&width=267&t=0",
+    calories: 460,
+    protein: 12
   },
   {
     name: "Pan Roast with Creamy Garlic & Feta Sauce",
     link: "https://www.facebook.com/reel/791181089862992",
     tags: ["Potatoes", "Zucchini", "Bell Pepper", "Chickpeas"],
     ingredients: ["Potato", "Zucchini", "Red Bell Pepper", "Chick Peas", "Garlic", "Salt & Pepper", "Olive Oil", "Yogurt", "Feta Cheese", "Sundried Tomato", "Bell Pepper", "Parsley", "Lemon Juice"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791181089862992%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791181089862992%2F&show_text=false&width=267&t=0",
+    calories: 610,
+    protein: 22
   },
   {
     name: "One Pot Tomato Orzo",
     link: "https://www.facebook.com/reel/1136569178060934",
     tags: ["Orzo"],
     ingredients: ["Cherry Tomatoes", "Garlic", "Tomato Paste", "1 Cup Orzo", "1 tsp Italian Seasoning", "2-3 cups vegetable broth", "Salt & Pepper", "Chickpeas", "Spinach"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1136569178060934%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1136569178060934%2F&show_text=false&width=267&t=0",
+    calories: 590,
+    protein: 21
   },
   {
     name: "Butter Beans & Roasted Cauliflower",
     link: "https://www.facebook.com/reel/489467600445701",
     tags: ["Cauliflower", "Butter Beans", "Beans"],
     ingredients: ["Cauliflower", "Harissa", "Olive Oil", "Cumin", "Coriander", "Onion", "Garlic", "Smoked Paprika", "Tomato Paste", "500 g Cherry Tomatoes", "2 cans Butter Beans", "Vegetable Broth", "Salt & Pepper", "Greek Yogurt", "Pomegranade Seeds", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F489467600445701%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F489467600445701%2F&show_text=false&width=267&t=0",
+    calories: 940,
+    protein: 38
   },
   {
     name: "Carrot & Butter Bean Dip",
     link: "https://www.facebook.com/reel/1303730294383083",
     tags: ["Carrots", "Butter Beans", "Beans", "Dip"],
     ingredients: ["Carrots", "Butter Beans", "Ground Turmeric", "Cumin Seeds", " Smoked Paprika", "Garlic", "Olive Oil", "Tahini", "Lemon Juice", "Salt & Pepper"],
+    calories: 420,
+    protein: 15
   },
   {
     name: "Roasted Vegetables",
     link: "https://www.facebook.com/reel/8951782511536323",
     tags: ["Broccoli", "Cauliflower", "Sweet Potato"],
     ingredients: ["Broccoli", "Caulifloweer", "Onion", "Sweet Potato", "Chickpeas", "Seasoning", "Olive Oil", "Yogurt", "Tahini", "Mustard", "Lemon Juice", "Garlic", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F8951782511536323%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F8951782511536323%2F&show_text=false&width=267&t=0",
+    calories: 680,
+    protein: 23
   },
   {
     name: "Bean and Sun-Dried Tomato Skillet",
     link: "https://www.facebook.com/reel/1703200250526981",
     tags: ["Butter Beans", "Beans"],
     ingredients: ["Onion", "Garlic", "Tomato Paste", "Seasoning", "Cooking Cream/Coconut Cream", "Sundried Tomatoes", "Butter Beans", "Spinach"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1703200250526981%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1703200250526981%2F&show_text=false&width=267&t=0",
+    calories: 560,
+    protein: 18
   },
   {
     name: "Roasted Cauliflower & Potatoes",
     link: "https://www.facebook.com/reel/1717240235749878",
     tags: ["Cauliflower", "Potatoes", "Chickpeas"],
     ingredients: ["Olive Oil", "Chickpeas", "Potatoes", "Cauliflower", "Cornflour", "1 tsp Sumac ", "1/2 tsp Cumin", "1 tsp Paprika", "1 tsp Pul Biber", "1 tsp Garlic Powder", "Salt & Pepper", "1 tsp Dried Oregano", "1 tbsp Sesame Seeds", "Tahini", "Lemon Juice", "Cold Water"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1717240235749878%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1717240235749878%2F&show_text=false&width=267&t=0",
+    calories: 640,
+    protein: 19
   },
   {
     name: "Aubergine Schnitzel",
     link: "https://www.facebook.com/reel/1171905377255368",
     tags: ["Aubergine"],
     ingredients: ["2 Aubergines", "Salt & Pepper", "Olive Oil", "50 g Flour", "2 Eggs", "1 tsp Mayonnaise", "1 tsp Mustard", "70 g Breadcrumbs", "2 tbsp Parsley", "2 tbsp Sesame Seeds", "1 tsp Cumin", "1 tsp Paprika", "500 g Cherry Tomatoes", "Garlic", " 1 tsp Italian Herbs", "6 Basil Leaves"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1171905377255368%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1171905377255368%2F&show_text=false&width=267&t=0",
+    calories: 890,
+    protein: 26
   },
   {
     name: "Eggplant Parm Steak",
     link: "https://www.facebook.com/reel/491589366561539",
     tags: ["Aubergine"],
     ingredients: ["Aubergine", "Onion", "Garlic", "Canned Tomatoes", "Salt & Pepper", "Mozzarella", "Basil", "Flour", "Egg", "Breadcrumbs", "Olive Oil"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F491589366561539%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F491589366561539%2F&show_text=false&width=267&t=0",
+    calories: 620,
+    protein: 25
   },
   {
     name: "Hassleback Aubergine",
     link: "https://www.facebook.com/reel/1866048843647756",
     tags: ["Aubergine"],
     ingredients: ["1 Aubergine", "1 Cup Marinara Sauce (260 g)", "Tomato", "Fresh Basil", "Mozzarella Cheese", "Salt & Peppr", "Garlic", "Olive Oil", "Breacrumbs", "Parmesan Cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbuzzfeedtasty%2Fvideos%2F1866048843647756%2F&show_text=false&width=476&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbuzzfeedtasty%2Fvideos%2F1866048843647756%2F&show_text=false&width=476&t=0",
+    calories: 480,
+    protein: 22
   },
   {
     name: "Smashed Potatoes with Beetroot Beans",
     link: "https://www.facebook.com/reel/1149304696381982",
     tags: ["Potatoes", "Butter Beans", "Beans", "Beetroot"],
     ingredients: ["Potatoes", "Dill", "Beetroot", "Thyme", "Salt & Pepper", "1 tbsp Maple Syrup", "3 Medium Beetroots", " 2 Cans Butter Beans", "Garlic", "Tahini", "Lemon Juice", "Olive Oil", "Ground Cumin"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1149304696381982%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1149304696381982%2F&show_text=false&width=267&t=0",
+    calories: 980,
+    protein: 34
   },
   {
     name: "Roasted Cabbage Wedges",
     link: "https://www.facebook.com/reel/1139186074658709",
     tags: ["Cabbage"],
     ingredients: ["1 Cabbage", "Olive Oil", "1/2 tsp Salt", "1/2 tsp Onion Powder", "1/2 tsp Paprika", "1/2 tsp Italian Herbs", "1/4 tsp Chili Pepper Flakes", "Garlic", "200g Feta Cheese", "150g Roasted Peppers", "150g Cream Cheese", "Lemon Juice", "Parsley", "Sesame Seeds"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1139186074658709%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1139186074658709%2F&show_text=false&width=267&t=0",
+    calories: 1120,
+    protein: 38
   },
   {
     name: "Zucchini Frittata",
     link: "https://www.facebook.com/reel/2667889830070013",
     tags: ["Zucchini", "Carrots"],
     ingredients: ["Onion", "Zucchini", "Carrots", "Corn", "100g Cheddar Cheese", "50g Feta Cheese", "Parsley", "2/3 Cup Flour", "1/4 Cup Milk", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2667889830070013%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2667889830070013%2F&show_text=false&width=267&t=0",
+    calories: 840,
+    protein: 39
   },
   {
     name: "Zaalouk",
     link: "https://www.facebook.com/reel/1012198027387914",
     tags: ["Aubergine", "Bell Pepper"],
     ingredients: ["4 Aubergines", "3 Bell Peppers", "Garlic", "3 Tomatoes", "Chillies", "Olive Oil", "Salt", "Cumin Powder", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1012198027387914%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1012198027387914%2F&show_text=false&width=267&t=0",
+    calories: 420,
+    protein: 8
   },
   {
     name: "Shish Andaz",
     link: "https://www.facebook.com/reel/24912473575011901",
     tags: ["Aubergine"],
     ingredients: ["3 Aubergines", "Salt & Pepper", "Olive Oil", "Onion", "300g Walnuts", "Cinnamon", "1/2 tsp Turmeric", "Tomato Paste", "4 tbsp Pomegranate Molasses", "Ice Cubes", "Cooked Rice"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24912473575011901%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24912473575011901%2F&show_text=false&width=267&t=0",
+    calories: 2350,
+    protein: 48
   },
   {
     name: "Za'Atar Broccoli with Red Pepper Sauce",
     link: "https://www.facebook.com/reel/2160819401066413",
     tags: ["Broccoli", "Bell Pepper"],
     ingredients: ["Broccoli", "Olive Oil", "Spices", "Salt & Pepper", "Walnuts", "Cumin Seeds", "Bell Pepper", "Lemon Juice", "Garlic", "Tomato Paste"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2160819401066413%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2160819401066413%2F&show_text=false&width=267&t=0",
+    calories: 480,
+    protein: 14
   },
   {
     name: "Baked Rice Paper Dumplings",
     link: "https://www.facebook.com/reel/1133101565401922",
     tags: ["Dumplings", "Tofu", "Carrots"],
     ingredients: ["500g mushrooms", "500g Tofu", "1 Large Carrot", " Spring Onions", "Fresh Ginger", "Garlic", "Olive Oil", " Soy Sauce", "Rice Vinegar", "1-2 Tbsp Cornstarch (Optional)", "12-14 Sheets Rice Paper", "Sesame Seeds", "1 tsp Sugar", "1 tbsp Hot Water", "1 tsp Rice Vinegar", "1 tsp Chili Oil", "1 tsp Garlic (Minced)", "1 tsp Sesame Seeds", "1/2 tsp Sesame Oil"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1133101565401922%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1133101565401922%2F&show_text=false&width=267&t=0",
+    calories: 890,
+    protein: 54
   },
   {
     name: "Spinach Feta Puff Pastry",
     link: "https://www.facebook.com/reel/24439419079016468",
     tags: ["Spinach", "Pastry", "Bake"],
     ingredients: ["275 g Puff Pastry", "Garlic", "350 g Frozen Spinach", "100g Feta Cheese", "100g Gouda Cheese", "1 Egg", "Salt & Pepper", "1 Egg for Brushing", "125g Mozzarella", "White & Black Sesame Seeds"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24439419079016468%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24439419079016468%2F&show_text=false&width=267&t=0",
+    calories: 1940,
+    protein: 72
   },
   {
     name: "Minestrone",
     link: "https://www.facebook.com/reel/1833903350559898",
     tags: ["Soup", "Carrots", "Potatoes", "Barley", "Beans", "Red Kidney Beans"],
     ingredients: ["Olive Oil", "Onion", "Carrot", "Celery", "Potatoes", "Canned Tomatoes", "Can Red Kidney Beans", "100g Pearl Barley", "Parsley", "Basil", "Parmesan Cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1833903350559898%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1833903350559898%2F&show_text=false&width=267&t=0",
+    calories: 820,
+    protein: 31
   },
   {
     name: "Roasted Potatoes & Carrots Soup",
     link: "https://www.facebook.com/reel/1565305374879968",
     tags: ["Potatoes", "Soup", "Carrots"],
     ingredients: ["Potatoes", "Onion", "Garlic", "Carrots", "Olive Oil", "Seasoning", "Coconut Milk", "Vegetable Broth", "Lemon Juice", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1565305374879968%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1565305374879968%2F&show_text=false&width=267&t=0",
+    calories: 680,
+    protein: 11
   },
   {
     name: "Dragon Tofu",
     link: "https://www.facebook.com/reel/1247205270759892",
     tags: ["Tofu", "Bell Pepper"],
     ingredients: ["Tofu", "Salt & Pepper", "1 Egg", "Cornflour", "Green/Red/Orange Bell Peppers", "Garlic", "Ginger", "Onion", "Cashew Nuts", "Ketchup", "Soy Sauce", "Red Chilli Sauce", "Honey", "Spring Onion"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fnotacookofficial%2Fvideos%2F1247205270759892%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fnotacookofficial%2Fvideos%2F1247205270759892%2F&show_text=false&width=267&t=0",
+    calories: 760,
+    protein: 41
   },
   {
     name: "Fried Cabbage",
     link: "https://www.facebook.com/reel/24393568470270522",
     tags: ["Cabbage"],
     ingredients: ["Cabbage", "Onion", "Garlic", "Salt", "Turmeric Powder", "Coriander Powder", "Fresh Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24393568470270522%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F24393568470270522%2F&show_text=false&width=267&t=0",
+    calories: 180,
+    protein: 5
   },
   {
     name: "Fried Zucchini Steak",
     link: "https://www.facebook.com/reel/851767694051900",
     tags: ["Zucchini"],
     ingredients: ["Zucchini", "Salt & Pepper", "Flour", "2 Eggs", "Grated Cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F851767694051900%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F851767694051900%2F&show_text=false&width=267&t=0",
+    calories: 390,
+    protein: 24
   },
   {
     name: "Tavče Gravče",
     link: "https://www.facebook.com/reel/2021740858657674",
     tags: ["Cannellini Beans", "Beans"],
     ingredients: ["Cannellini Beans", "Salt & Pepper", "2 Onions", "Garlic", "Bay Leaves", "Dried Chillies", "Long Red Peppers", "Olive Oil", "Tomato Paste", "1 tsp Plain Flour", "1 tbsp Sweet Paprika", "Dried Mint"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2021740858657674%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2021740858657674%2F&show_text=false&width=267&t=0",
+    calories: 610,
+    protein: 26
   },
   {
     name: "Çiğ Köfte (Turkish Bulgur Balls)",
     link: "https://www.facebook.com/reel/2021740858657674",
     tags: ["Bulgur"],
     ingredients: ["400g Brown Bulgur", "3 Large Tomatoes", "1 Large Onnion", "Garlic", " 125g Walnuts", "1 tbsp Tomato Paste", "2 tbsp Mild Red Pepper Paste", "1 tbsp Chilli Flakes", "1 tbsp Isot Pepper", "1 tsp Cumin Powder", "1 tsp Baharat", "Salt & Pepper", "120g Pomegranate Molasses", "120g Olive Oil", "1/2 Lettuce", "1 Lemon"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2021740858657674%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2021740858657674%2F&show_text=false&width=267&t=0",
+    calories: 3380,
+    protein: 78
   },
   {
     name: "Cheesy Lentil Vegetable Pie",
     link: "https://www.facebook.com/reel/935457789172550",
     tags: ["Red Lentils", "Lentils", "Zucchini", "Carrots"],
     ingredients: ["Olive Oil", "Onion", "Carrot", "200g Zucchini", "Garlic", "200g Red Lentils", "600ml Vegetable Broth", "112g Shredded Mozzarella", "30g Breadcrumbs", "Salt & Pepper", "1 tbs Parmesan Cheese", "Chili Pepper Flakes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F935457789172550%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F935457789172550%2F&show_text=false&width=267&t=0",
+    calories: 1240,
+    protein: 76
   },
   {
     name: "Baked Oats Cake",
     link: "https://www.facebook.com/reel/1817084158984624",
     tags: ["Oats", "Dessert", "Carrots", "Bake"],
     ingredients: ["60g Oats", "50g Grated Carrots", "200g Greek Yogurt", "2 Eggs", "1/2 tsp Baking Powder", "1 tsp Cinnamon", "1 tbsp Agave Syrup", "Almond Flakes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0",
+    calories: 540,
+    protein: 34
   },
   {
     name: "Raw Carrot Cake Squares",
     link: "https://www.facebook.com/share/r/1EMrsjmVV3/",
     tags: ["Dessert", "Carrots", "Oats"],
     ingredients: ["2 Medium Carrots", "2/3 Cup Dates", "1 1/2 Cup Oats", "1/2 Cup Coconut Flakes", "1 Cup Walnuts", "2 tsp Cinnamon", "1/4 tsp Nutmeg", "1/4 tsp Ginger", "1 tsp Vanilla Extract", "2 tbsp Plant Milk", "1 Cup Cashews (soaked for min. 2 hours)", "1 tbsp Lemon Juice", "1 tsp Vanilla Extract", "4 Dates", "1/4 cup + 2 tbsp Plant Milk"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F906738255542215%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F906738255542215%2F&show_text=false&width=267&t=0",
+    calories: 2150,
+    protein: 46
   },
   {
     name: "Chickpea Soup",
     link: "https://www.facebook.com/share/r/1BFL1Z59xJ/",
     tags: ["Soup", "Chickpeas", "Bell Pepper", "Carrots", "Gnocchi"],
     ingredients: ["45g Cashews", "180ml Soy Milk", "30g Nutritional Yeast", "Olive Oil", "2 Onions", "2 Carrots", "1 Red Bell Pepper", "85g Sundried Tomatoes", "Garlic", "85g Tomato Paste", "490g Chickpeas", "1200ml Vegetable Broth", "250g Gnocchi", "Parsley", "Basil", "Spinach", "Lemon Juice", "Smoked Paprika", "Garlic Powder", "Dried Thyme", "Chili Flakes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F854383547652526%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F854383547652526%2F&show_text=false&width=267&t=0",
+    calories: 1420,
+    protein: 48
   },
   {
     name: "Marry Me Chickpeas",
     link: "https://www.facebook.com/share/r/1C2PC33UgU/",
     tags: ["Chickpeas", "Bell Pepper"],
     ingredients: ["Olive Oil", "1 Onion", "1 Red Bell Pepper", "14g Sundried Tomatoes", "Garlic", "Tomato Paste", "1/2 Red Chili Flakes", "1 tsp Mixed Herbs", "1 tsp Smoked Papriks", "16g Cashews", "295ml Soy Milk", "15g Nutritional Yeast", "1 Can Chickpeas", "Spinach", "Lemon Juice", "Basil", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1337456481572728%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1337456481572728%2F&show_text=false&width=267&t=0",
+    calories: 640,
+    protein: 24
   },
   {
     name: "Potato & Zucchini Cheese Bake",
     link: "https://www.facebook.com/share/r/1EGWVdCViY/",
     tags: ["Zucchini", "Potatoes"],
     ingredients: ["3 Potatoes", "2 Zucchini", "60g Cheddar Cheese", "3 tbsp Breadcrumbs", "3 Eggs", "Salt", "Paprika", "Herbs", "Olive Oil"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2395499890862220%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2395499890862220%2F&show_text=false&width=267&t=0",
+    calories: 720,
+    protein: 34
   },
   {
     name: "Sweet Potato & Broccoli Quiche",
     link: "https://www.facebook.com/share/r/1GPyXbdSdV/",
     tags: ["Broccoli", "Sweet Potato", "Quiche"],
     ingredients: ["3 Small Sweet Potatoes", "8–10 small broccoli florets (cooked)", "100g Cheese (for the base)", "150g Cottage Cheese", "1 Red Pointed Pepper", "Red Onion", "100g Cheese (for topping)", "Olive oil", "Salt & Pepper", "Herbs"],
+    calories: 1140,
+    protein: 68
   },
   {
     name: "Roasted Broccoli Salad",
     link: "https://www.facebook.com/share/r/1FsDW6Xh9u/",
     tags: ["Broccoli", "Chickpeas"],
     ingredients: ["3 Heads Broccoli", "Olive Oil", "Salt & Pepper", "3 Cups Kale", "Red Onion", "Tahini", "Water", "3 Dates", "Lemon Juice", "Lemon Zest", "Balsamic Vinegar", "Oregano", "1 Can Chickpeas", "Parmesan Cheese", "1/2 tsp Paprika", "1/2 tsp Garlic Powder", "1/4 cup Cashews", "Fresh Dill", "Scallions"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1438519084404658%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1438519084404658%2F&show_text=false&width=267&t=0",
+    calories: 920,
+    protein: 32
   },
   {
     name: "Potato & Vegetable Quiche",
     link: "https://www.facebook.com/share/r/17UWWrqbAd/",
     tags: ["Potatoes"],
     ingredients: ["6–7 Medium Potatoes", "Salt", "Olive Oil", "200g Grated Cheese", "200g Spinach", "10 Cherry Tomatoes", "Red Onion", "100g Feta Cheese", "120ml Oat Cream", "80ml Hollandaise"],
+    calories: 1840,
+    protein: 64
   },
   {
     name: "One Pot Lentils",
     link: "https://www.facebook.com/share/r/18aBLW3Xhp/",
     tags: ["Black Lentils", "Lentils"],
     ingredients: ["Shallots", "Garlic", "Cumin", "Paprika", "Canned Lentils", "Parsley", "Thyme", "Vegetable Broth", "Greek Yogurt"],
+    calories: 460,
+    protein: 26
   },
   {
     name: "Çilbir",
     link: "https://www.facebook.com/share/r/1bCSfKnMgW/",
     tags: ["Eggs", "Breakfast"],
     ingredients: ["4 Eggs", "350g Yogurt", "Garlic", "40g Butter", "2 tsp Pepper Flakes", "Fresh Dill", "Salt"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1518963022901739%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1518963022901739%2F&show_text=false&width=267&t=0",
+    calories: 740,
+    protein: 38
   },
   {
     name: "Smoky Crispy Aubergine",
     link: "https://www.facebook.com/reel/2018462482070034",
     tags: ["Aubergine"],
     ingredients: ["2 Aubergines", "Olive Oil", "Salt", "1 tbsp Paprika", "3/4 tsp Garlic Powder", "1/2 tbsp Honey", "Lemon Juice", "Water"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2018462482070034%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2018462482070034%2F&show_text=false&width=267&t=0",
+    calories: 290,
+    protein: 4
   },
   {
     name: "Sweet Potato Pizza",
     link: "https://www.facebook.com/share/r/1EKrs4BmXV/",
     tags: ["Sweet Potato"],
     ingredients: ["Sweet Potato", "90g Almond Flour", "1 Egg", "3 tbsp Red Lentils & Tomato Pesto", "Olives"],
+    calories: 780,
+    protein: 24
   },
   {
     name: "Mercimek Koftesi",
     link: "https://www.facebook.com/reel/1689922655356072/",
     tags: ["Red Lentils", "Lentils", "Bulgur"],
     ingredients: ["250g Red Lentils", "550ml Water", "180g Bulgur", "80ml Olive Oil", "Onion", "Tomato Paste", " 1tsp Cumin", "2tsp Paprika", "Salt & Pepper", "Parsley", "Mint", "4 Green Onions", "Lemon Juice", "1 tbsp Pomegranate Molasses", "1 Lettuce Head"],
+    calories: 1720,
+    protein: 74
   },
   {
     name: "Zucchini & Chickpea Salad",
     link: "https://www.facebook.com/share/r/1CgbE8tXAc/",
     tags: ["Zucchini", "Chickpeas", "Salad"],
     ingredients: ["3 Zucchini", "Chickpeas", "Salt & Pepper", "Olive Oil", "1 tsp Paprika", "1/2 tsp Garlic Powder", "Parsley", "Red Onion", "Avocado", "Pistachios"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1217666250231692%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1217666250231692%2F&show_text=false&width=267&t=0",
+    calories: 640,
+    protein: 18
   },
   {
     name: "Golden Curry Meatballs",
     link: "https://www.facebook.com/share/r/19ZVC8wPTe/",
     tags: ["Butter Beans", "Beans", "Tofu"],
     ingredients: ["Butter Beans", "Tofu", "Spring Onion", "Soy Sauce", "Breadcrumbs", "Onion", "Garlic", "Garam Masala", "Cream", "Curry Powder", "Lemon Juice", "Black & White Sesame Seeds", "Cooked Rice", "Spicy Oil"],
+    calories: 1150,
+    protein: 44
   },
   {
     name: "Spinach & Feta Puff Pastry Rolls",
     link: "https://www.facebook.com/reel/867033888981430",
     tags: ["Pastry", "Bake"],
     ingredients: ["200g Feta Cheese", "120g Spinach", "1 Egg", "Salt & Pepper", "340g Puff Pastry", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F867033888981430%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F867033888981430%2F&show_text=false&width=267&t=0",
+    calories: 1680,
+    protein: 51
   },
   {
     name: "Crispy Butter Tofu",
     link: "https://www.facebook.com/share/r/1EKCeZdDJY/",
     tags: ["Tofu"],
     ingredients: ["600g Tofu", "1tbsp Sugar", "1tbsp Sesame Oil", "3tbsp Soy Sauce", "3tbsp Peanut Butter", "1/2 tsp Chilli Flakes", "Garlic", "Water", "Spring Onion"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1592708331804780%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1592708331804780%2F&show_text=false&width=267&t=0",
+    calories: 940,
+    protein: 68
   },
   {
     name: "Black Lentil Stew",
     link: "https://www.facebook.com/share/r/1BL5nqqRLA/",
     tags: ["Black Lentils", "Lentils", "Carrots", "Potatoes"],
     ingredients: ["Carrots", "Onion", "Celery", "Tomato Paste", "Mushrooms", "Black Lentils", "Canned Tomatoes", "Vegetable Stock", "Potatoes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F973408021733090%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F973408021733090%2F&show_text=false&width=267&t=0",
+    calories: 780,
+    protein: 34
   },
   {
     name: "Crispy Tofu Shawarma",
     link: "https://www.facebook.com/share/r/1CwF5dvmVd/",
     tags: ["Tofu"],
     ingredients: ["Tofu", "Olive Oil", "2 tbsp Yogurt", "1 tbsp Cornstarch", "1 tbsp Soy Sauce", "1 tsp Garlic Powder", "1 tsp Onion Powder", "1 tsp Smoked Paprika", "1 tsp Ground Cumin", "1 tsp Ground Coriander", "1/2 tsp Dried Oregano", "1/2 tsp Chili Flakes", "Salt & Pepper", "Lemon Juice", "1 Garlic Clove Grated", "2 tbs Fresh Dill/Mint", "1/4 Red Onion", "1/2 Cucumber", "Cherry Tomatoes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1993257547997129%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1993257547997129%2F&show_text=false&width=267&t=0",
+    calories: 580,
+    protein: 36
   },
   {
     name: "Hasselback Harissa Tofu Steaks",
     link: "https://www.facebook.com/share/r/1GTieV1dRS/",
     tags: ["Tofu"],
     ingredients: ["Tofu", "Harissa Paste", "Tomato Paste", "Soy Sauce", "Mayple Syrup", "Lemon Zest", "Olive Oil", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1705090520691197%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1705090520691197%2F&show_text=false&width=267&t=0",
+    calories: 460,
+    protein: 32
   },
   {
     name: "Vegetable Bake",
     link: "https://www.facebook.com/share/r/18iZjwQPEd/",
     tags: ["Broccoli", "Cauliflower", "Bell Pepper", "Bake"],
     ingredients: ["Broccoli", "Cauliflower", "Olive Oil", "Onion", "Red Bell Pepper", "3 Eggs", "320ml Milk", "95g Flour", "Parmesan Cheese", "1 tsp Paprika", "1 tsp Garlic Powder", "Salt & Pepper", "Parsley", "Mozzarella Cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4552277205000869%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4552277205000869%2F&show_text=false&width=267&t=0",
+    calories: 1140,
+    protein: 58
   },
   {
     name: "Vegan Lentil Burger Tacos",
     link: "https://www.facebook.com/share/r/1LHtcbc5fa/",
     tags: ["Green Lentils", "Lentils", "Carrots", "Burgers", "Tacos"],
     ingredients: ["200g Green Lentils", "Onion", "Potatoes", "Carrot", "Parsley", "1 tsp Paprika", "1 tsp Cumin", "Salt", "250g Oat Flour"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F971847305489292%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F971847305489292%2F&show_text=false&width=267&t=0",
+    calories: 1480,
+    protein: 66
   },
   {
     name: "Spinach & Mushroom Zucchini Lasagna Bake",
     link: "https://www.facebook.com/reel/1017899374132791",
     tags: ["Spinach", "Mushrooms", "Zucchini", "Lasagna", "Bake"],
     ingredients: ["2 Zucchini", "Olive Oil", "2 Scallions", "225g Spinach", "Salt & Pepper", "280g Mushrooms", "Garlic Powder", "Onion Powder", "Mozzarella Cheese", "Breadcrumbs", "Parmesan Cheese", "Italian Herbs"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1017899374132791%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1017899374132791%2F&show_text=false&width=267&t=0",
+    calories: 680,
+    protein: 36
   },
   {
     name: "Chickpea Banana Cookies",
     link: "https://www.facebook.com/share/r/1TJagSJgH2/",
     tags: ["Chickpeas", "Banana", "Cookies", "Dessert"],
     ingredients: ["1 & 1/2 Cups Chickpeas", "2 Bananas", "1/3 Cup Maple Syrup", "3 tbsp Peanut Butter", "1 & 1/3 cup Almond Flour", "1 tsp Baking Soda", "1 tsp Vanilla Extract", "Salt", "80g Chocolate"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1505863757908610%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1505863757908610%2F&show_text=false&width=267&t=0",
+    calories: 1540,
+    protein: 44
   },
   {
     name: "Lentils Salad with Feta",
     link: "https://www.facebook.com/share/r/1CUmARk4ZB/",
     tags: ["Salad", "Lentils"],
     ingredients: ["2 cans lentils", "1 cup dates", "1 cucumber", "3/4 cup mint", "1/2 cup parsley", "1/2 cup red onion", "1/4 cup feta", "1/2 cup pistachios", "Zest of one lemon"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1657964025423432%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1657964025423432%2F&show_text=false&width=267&t=0",
+    calories: 1360,
+    protein: 52
   },
   {
     name: "Red Lentil Pizza",
     link: "https://www.facebook.com/share/r/18xVB53G47/",
     tags: ["Pizza", "Red Lentils", "Lentils", "Bake"],
-    ingredients: ["100g Red Lentils", "2 Tbsp Tomato Sauce", "60g Low Fat Shredded Cheese", "1/2 Red Onion", "Paprika", "Salt & pepper"]
+    ingredients: ["100g Red Lentils", "2 Tbsp Tomato Sauce", "60g Low Fat Shredded Cheese", "1/2 Red Onion", "Paprika", "Salt & pepper"],
+    calories: 540,
+    protein: 38
   },
   {
     name: "Veggie Flatbread",
     link: "https://www.facebook.com/share/r/1H6rAaFPpM/",
-    tags: ["Zucchini", "Potatoes", "Bread", "Bake", "Zucchini"],
+    tags: ["Zucchini", "Potatoes", "Bread", "Bake"],
     ingredients: ["2 Zucchini", "1 Potato", "1 Cup Cherry Tomatoes", "1 Red Onion", "2.5 Cups Flour", "Olive Oil", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F949816537666404%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F949816537666404%2F&show_text=false&width=267&t=0",
+    calories: 1210,
+    protein: 32
   },
   {
     name: "Melting Cabbage Bake",
     link: "https://www.facebook.com/share/r/1Cs2XnLjFU/",
     tags: ["Cabbage"],
     ingredients: ["1 medium green cabbage cut into 8 wedges", "2 tbsp olive oil", "2 tbsp unsalted butter", "1 shallot", "garlic", "1 cup vegetable broth", "2 cups heavy cream", "½ cup sun-dried tomatoes", "1 cup parmesan cheese", "2 tbsp chili oil", "Oregano", "Thyme", "Smoked paprika", "Salt & Pepper", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1707293950449027%2F&show_text=false&width=266&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1707293950449027%2F&show_text=false&width=266&t=0",
+    calories: 2450,
+    protein: 44
   },
   {
     name: "Greek Style Halloumi Flatbread",
     link: "https://www.facebook.com/share/r/15rTeDA64W4/",
     tags: ["Halloumi", "Wraps"],
     ingredients: ["1 flatbread", "halloumi cheese", "cucumber", "tomato", "red onion", "olive oil", "lemon juice", "salt and pepper", "oregano", "Greek yogurt ", "Garlic", "Salt & Pepper", "lemon juice", "olive oil ", "cucumber ", "Dill"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1345065371137696%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1345065371137696%2F&show_text=false&width=267&t=0",
+    calories: 680,
+    protein: 32
   },
   {
     name: "Lentil Bread",
     link: "https://www.facebook.com/share/r/1D4sAxG1NX/",
     tags: ["Bread", "Bake", "Red Lentils", "Lentils"],
     ingredients: ["150g red lentils", "2 tbsp extra virgin olive oil ", "2 tbsp yoghurt ", "1 tsp salt", "1 tsp paprika ", "1 tsp garlic powder ", "1 tsp mixed herbs", "1 tsp baking powder", "20g psyllium husk powder"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1253156930302099%2F&show_text=false&width=267&t=0"
+    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1253156930302099%2F&show_text=false&width=267&t=0",
+    calories: 610,
+    protein: 39
   },
   {
-    name: "Chickpea Crust Pizza",
-    link: "https://www.facebook.com/share/r/1Ks8sMQThT/",
-    tags: ["Chickpeas", "Pizza", "Bake"],
-    ingredients: ["90g Chickpeas", "1/2 cup sour cream or yogurt", "1 egg", "Salt", "olive oil", "1/2 tsp. baking powder", "tomato sauce", "oregano", "shredded mozzarella ", "black olives", "Basil"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F977215734965633%2F&show_text=false&width=267&t=0"
+    "name": "Chickpea Crust Pizza",
+    "link": "https://www.facebook.com/share/r/1Ks8sMQThT/",
+    "tags": ["Chickpeas", "Pizza", "Bake"],
+    "ingredients": ["90g Chickpeas", "1/2 cup sour cream or yogurt", "1 egg", "Salt", "olive oil", "1/2 tsp. baking powder", "tomato sauce", "oregano", "shredded mozzarella ", "black olives", "Basil"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F977215734965633%2F&show_text=false&width=267&t=0",
+    "calories": 685,
+    "protein": 36
   },
   {
-    name: "Creamy Potato Dal",
-    link: "https://www.facebook.com/share/r/197g3QzTYA/",
-    tags: ["Red Lentils", "Lentils", "Potatoes", "Curry"],
-    ingredients: ["200g red lentils", "olive oil", "cumin seeds", "onion", "garlic", "ginger ", "curry powder", "canned tomatoes", "potatoes", "Vegetable stock", "coconut milk", "Coriander", "3 limes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1288588483453033%2F&show_text=false&width=267&t=0"
+    "name": "Creamy Potato Dal",
+    "link": "https://www.facebook.com/share/r/197g3QzTYA/",
+    "tags": ["Red Lentils", "Lentils", "Potatoes", "Curry"],
+    "ingredients": ["200g red lentils", "olive oil", "cumin seeds", "onion", "garlic", "ginger ", "curry powder", "canned tomatoes", "potatoes", "Vegetable stock", "coconut milk", "Coriander", "3 limes"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1288588483453033%2F&show_text=false&width=267&t=0",
+    "calories": 1590,
+    "protein": 58
   },
   {
-    name: "Cheesy Red Pepper Boats",
-    link: "https://www.facebook.com/share/r/14f726taY7A/",
-    tags: ["Bell Pepper"],
-    ingredients: ["5 long red sweet peppers", "100g feta cheese", "100g mozzarella", "100g cream cheese", "2 spring onions", "tomato", "garlic", "basil", "mint", "olive oil", "Salt & Pepper", "Chilli flakes"]
+    "name": "Cheesy Red Pepper Boats",
+    "link": "https://www.facebook.com/share/r/14f726taY7A/",
+    "tags": ["Bell Pepper"],
+    "ingredients": ["5 long red sweet peppers", "100g feta cheese", "100g mozzarella", "100g cream cheese", "2 spring onions", "tomato", "garlic", "basil", "mint", "olive oil", "Salt & Pepper", "Chilli flakes"],
+    "calories": 1050,
+    "protein": 52
   },
   {
-    name: "Veggie Cabbage Lasagna",
-    link: "https://www.facebook.com/share/r/1EBsvVsX5G/",
-    tags: ["Cabbage", "Lasagna", "Mushrooms", "Carrots", "Zucchini"],
-    ingredients: ["1 medium cabbage", "Cream Cheese", "olive oil", "garlic", "onion", "mushrooms", "carrot", "zucchini", "Italian seasoning", "Salt & Pepper", "1/4 cup marinara sauce", "Basil"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F924983697108275%2F&show_text=false&width=267&t=0"
+    "name": "Veggie Cabbage Lasagna",
+    "link": "https://www.facebook.com/share/r/1EBsvVsX5G/",
+    "tags": ["Cabbage", "Lasagna", "Mushrooms", "Carrots", "Zucchini"],
+    "ingredients": ["1 medium cabbage", "Cream Cheese", "olive oil", "garlic", "onion", "mushrooms", "carrot", "zucchini", "Italian seasoning", "Salt & Pepper", "1/4 cup marinara sauce", "Basil"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F924983697108275%2F&show_text=false&width=267&t=0",
+    "calories": 695,
+    "protein": 24
   },
   {
-    name: "Baked Oats",
-    link: "https://www.facebook.com/share/r/1A2iWdVZpw/",
-    tags: ["Oats", "Carrots", "Bake"],
-    ingredients: ["60g rolled oats", "50g grated carrot", "200g Greek yoghurt", "2  eggs", "agave/maple syrup", "almonds", "cinnamon", "baking powder"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0"
+    "name": "Baked Oats",
+    "link": "https://www.facebook.com/share/r/1A2iWdVZpw/",
+    "tags": ["Oats", "Carrots", "Bake"],
+    "ingredients": ["60g rolled oats", "50g grated carrot", "200g Greek yoghurt", "2  eggs", "agave/maple syrup", "almonds", "cinnamon", "baking powder"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1817084158984624%2F&show_text=false&width=267&t=0",
+    "calories": 595,
+    "protein": 38
   },
   {
-    name: "Egyptian Lentil Soup",
-    link: "https://www.facebook.com/reel/1964191357789192",
-    tags: ["Soup", "Red Lentils", "Lentils", "Carrots"],
-    ingredients: ["Large Carrot", "Garlic", "Onion", "1 tbsp Unsalted Butter", "2 cups Red Lentils", "Ground Cumin", "2 tsp Paprika", "Salt & Pepper", "4 Cups Boiling Water"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1964191357789192%2F&show_text=false&width=267&t=0"
+    "name": "Egyptian Lentil Soup",
+    "link": "https://www.facebook.com/reel/1964191357789192",
+    "tags": ["Soup", "Red Lentils", "Lentils", "Carrots"],
+    "ingredients": ["Large Carrot", "Garlic", "Onion", "1 tbsp Unsalted Butter", "2 cups Red Lentils", "Ground Cumin", "2 tsp Paprika", "Salt & Pepper", "4 Cups Boiling Water"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1964191357789192%2F&show_text=false&width=267&t=0",
+    "calories": 1610,
+    "protein": 98
   },
   {
-    name: "Red Lentil Savoury Pancakes",
-    link: "https://www.facebook.com/reel/1668421797523076",
-    tags: ["Red Lentils", "Lentils", "Carrots", "Bell Pepper", "Cabbage", "Pancakes", "Dessert"],
-    ingredients: ["190g Red Lentils", "1 Cup Water", "Olive Oil", "50g Carrot", "40g Bell Pepper", "40g Cabbage", "Green Onion", "Salt & Pepper", "1/2 Tbsp Baking Powder"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1668421797523076%2F&show_text=false&width=267&t=0"
+    "name": "Red Lentil Savoury Pancakes",
+    "link": "https://www.facebook.com/reel/1668421797523076",
+    "tags": ["Red Lentils", "Lentils", "Carrots", "Bell Pepper", "Cabbage", "Pancakes", "Dessert"],
+    "ingredients": ["190g Red Lentils", "1 Cup Water", "Olive Oil", "50g Carrot", "40g Bell Pepper", "40g Cabbage", "Green Onion", "Salt & Pepper", "1/2 Tbsp Baking Powder"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1668421797523076%2F&show_text=false&width=267&t=0",
+    "calories": 810,
+    "protein": 49
   },
   {
-    name: "Chickpea Curry",
-    link: "https://www.facebook.com/reel/1296802485707495",
-    tags: ["Chickpeas", "Curry"],
-    ingredients: ["1 Tbsp Coconut Oil", "Onion", "Garlic", "1 Tbsp Fresh Ginger", "2 Cans Chickpeas", "1 Can Coconut Milk", "1 Cup Vegetable Broth", "2 Tbsps Curry Powder", "1½ Tsps Garam Masala", "1 Tsp Ground Cumin", "1 Tsp Kosher Salt", "Cilantro", "Lemon Juice"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1296802485707495%2F&show_text=false&width=267&t=0"
+    "name": "Chickpea Curry",
+    "link": "https://www.facebook.com/reel/1296802485707495",
+    "tags": ["Chickpeas", "Curry"],
+    "ingredients": ["1 Tbsp Coconut Oil", "Onion", "Garlic", "1 Tbsp Fresh Ginger", "2 Cans Chickpeas", "1 Can Coconut Milk", "1 Cup Vegetable Broth", "2 Tbsps Curry Powder", "1½ Tsps Garam Masala", "1 Tsp Ground Cumin", "1 Tsp Kosher Salt", "Cilantro", "Lemon Juice"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1296802485707495%2F&show_text=false&width=267&t=0",
+    "calories": 1340,
+    "protein": 42
   },
   {
-    name: "Cabbage Pasta",
-    link: "https://www.facebook.com/reel/808445575024502",
-    tags: ["Cabbage", "Pasta"],
-    ingredients: ["1/2 Cabbage", "Olive Oil", "Salt & Pepper", "Garlic", "Italian Seasoning", "Red Chili Flakes", "1 Cup Vegetable Broth", "1/2 Cup Heavy Cream", "1/2 Cup Sun-Dried Tomatoes", "1/2 Cup Parmesan", "Parsley"],
+    "name": "Cabbage Pasta",
+    "link": "https://www.facebook.com/reel/808445575024502",
+    "tags": ["Cabbage", "Pasta"],
+    "ingredients": ["1/2 Cabbage", "Olive Oil", "Salt & Pepper", "Garlic", "Italian Seasoning", "Red Chili Flakes", "1 Cup Vegetable Broth", "1/2 Cup Heavy Cream", "1/2 Cup Sun-Dried Tomatoes", "1/2 Cup Parmesan", "Parsley"],
+    "calories": 840,
+    "protein": 26
   },
   {
-    name: "Red Lentil Loaf",
-    link: "https://www.facebook.com/reel/2033591327537183",
-    tags: ["Red Lentils", "Lentils", "Carrots", "Bake", "Bell Pepper"],
-    ingredients: ["1 1/2 Cups Red Lentils", "1 Cup Coconut Cream", "Olive Oil", "150g Shredded Carrot", "100g Chopped Bell Pepper", "2 Green Onions", "25g Sun-Dried Tomatoes", "Thyme", "Salt & Pepper", "1/2 Tbsp Baking Powder", "Sesame Seeds"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2033591327537183%2F&show_text=false&width=268&t=0"
+    "name": "Red Lentil Loaf",
+    "link": "https://www.facebook.com/reel/2033591327537183",
+    "tags": ["Red Lentils", "Lentils", "Carrots", "Bake", "Bell Pepper"],
+    "ingredients": ["1 1/2 Cups Red Lentils", "1 Cup Coconut Cream", "Olive Oil", "150g Shredded Carrot", "100g Chopped Bell Pepper", "2 Green Onions", "25g Sun-Dried Tomatoes", "Thyme", "Salt & Pepper", "1/2 Tbsp Baking Powder", "Sesame Seeds"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2033591327537183%2F&show_text=false&width=268&t=0",
+    "calories": 1490,
+    "protein": 74
   },
   {
-    name: "Creamy Cabbage",
-    link: "https://www.facebook.com/reel/1719865112777975",
-    tags: ["Cabbage", "Carrots", "Potatoes"],
-    ingredients: ["1 Cabbage", "4 Carrots", "2 Potatoes", "Olive Oil", "Garlic Powder", "Onion Powder", "Paprika", "Italian Herb Blend", "Salt & Pepper", "1 Cup Cream", "1/2 Cup Vegetable Broth", "1/2 Cup Mozzarella", "Fresh Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1719865112777975%2F&show_text=false&width=267&t=0"
+    "name": "Creamy Cabbage",
+    "link": "https://www.facebook.com/reel/1719865112777975",
+    "tags": ["Cabbage", "Carrots", "Potatoes"],
+    "ingredients": ["1 Cabbage", "4 Carrots", "2 Potatoes", "Olive Oil", "Garlic Powder", "Onion Powder", "Paprika", "Italian Herb Blend", "Salt & Pepper", "1 Cup Cream", "1/2 Cup Vegetable Broth", "1/2 Cup Mozzarella", "Fresh Parsley"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1719865112777975%2F&show_text=false&width=267&t=0",
+    "calories": 1080,
+    "protein": 28
   },
   {
-    name: "Spaghetti Aglio e Olio",
-    link: "https://www.facebook.com/reel/1713658069898471",
-    tags: ["Pasta"],
-    ingredients: ["340g Linguine / Spaghetti", "Salt", "Chili Flakes", "Olive Oil", "Garlic", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1713658069898471%2F&show_text=false&width=267&t=0"
+    "name": "Spaghetti Aglio e Olio",
+    "link": "https://www.facebook.com/reel/1713658069898471",
+    "tags": ["Pasta"],
+    "ingredients": ["340g Linguine / Spaghetti", "Salt", "Chili Flakes", "Olive Oil", "Garlic", "Parsley"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1713658069898471%2F&show_text=false&width=267&t=0",
+    "calories": 1540,
+    "protein": 44
   },
   {
-    name: "Creamy Red Dal",
-    link: "https://www.facebook.com/reel/1276679827991647",
-    tags: ["Red Lentils", "Lentils", "Curry"],
-    ingredients: ["For The Dal:", "320g Red Lentils", "400ml Water", "800ml Coconut Milk", "1 tsp Turmeric", "1/2 tsp Cinnamon", "1/2 tsp Cayenne", "2 tsp Sea Salt", "Lemon Juice", "For The Temper:", "1/2 Onion", "2 Garlic Cloves", "1 Bunch Coriander", "1 tbsp Coconut Oil", "Curry Leaves", "1 tsp Mustard Seeds", "1 tsp Cumin Seeds", "1 tsp Curry Powder", "Crispy Onions", "Fresh Green Chilli", "Fresh Coriander"],
+    "name": "Creamy Red Dal",
+    "link": "https://www.facebook.com/reel/1276679827991647",
+    "tags": ["Red Lentils", "Lentils", "Curry"],
+    "ingredients": ["For The Dal:", "320g Red Lentils", "400ml Water", "800ml Coconut Milk", "1 tsp Turmeric", "1/2 tsp Cinnamon", "1/2 tsp Cayenne", "2 tsp Sea Salt", "Lemon Juice", "For The Temper:", "1/2 Onion", "2 Garlic Cloves", "1 Bunch Coriander", "1 tbsp Coconut Oil", "Curry Leaves", "1 tsp Mustard Seeds", "1 tsp Cumin Seeds", "1 tsp Curry Powder", "Crispy Onions", "Fresh Green Chilli", "Fresh Coriander"],
+    "calories": 1880,
+    "protein": 84
   },
   {
-    name: "Caramelized Onion Pasta",
-    link: "https://www.facebook.com/reel/962376913208697",
-    tags: ["Pasta"],
-    ingredients: ["Spaghetti / Linguine", "Garlic", "Onion", "Chili Flakes", "2 tbsp Butter", "Sun-Dried Tomatoes", "Grated Parmesan", "Fresh Parsley", "Salt & Pepper", "Lemon Juice", "Pasta Water"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F962376913208697%2F&show_text=false&width=267&t=0"
+    "name": "Caramelized Onion Pasta",
+    "link": "https://www.facebook.com/reel/962376913208697",
+    "tags": ["Pasta"],
+    "ingredients": ["Spaghetti / Linguine", "Garlic", "Onion", "Chili Flakes", "2 tbsp Butter", "Sun-Dried Tomatoes", "Grated Parmesan", "Fresh Parsley", "Salt & Pepper", "Lemon Juice", "Pasta Water"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F962376913208697%2F&show_text=false&width=267&t=0",
+    "calories": 890,
+    "protein": 24
   },
   {
-    name: "Red Lentil Curry",
-    link: "https://www.facebook.com/reel/1515103296801756",
-    tags: ["Red Lentils", "Lentils", "Curry"],
-    ingredients: ["Virgin Coconut Oil", "Garlic", "Fresh Ginger", "Ground Turmeric", "1-2 Serrano Peppers", "Ground Cumin", "Ground Coriander", "Red Chili Powder", "Curry Powder", "Garam Masala", "Salt & Pepper", "190g Red Lentils", "480ml Vegetable Broth", "Can Crushed Tomatoes", "Can Coconut Milk", "3 tbsps Unsweetened Creamy Almond Butter", "Lemon Juice", "Fresh Cilantro", "Basmati / Jasmine Rice"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1515103296801756%2F&show_text=false&width=267&t=0"
+    "name": "Red Lentil Curry",
+    "link": "https://www.facebook.com/reel/1515103296801756",
+    "tags": ["Red Lentils", "Lentils", "Curry"],
+    "ingredients": ["Virgin Coconut Oil", "Garlic", "Fresh Ginger", "Ground Turmeric", "1-2 Serrano Peppers", "Ground Cumin", "Ground Coriander", "Red Chili Powder", "Curry Powder", "Garam Masala", "Salt & Pepper", "190g Red Lentils", "480ml Vegetable Broth", "Can Crushed Tomatoes", "Can Coconut Milk", "3 tbsps Unsweetened Creamy Almond Butter", "Lemon Juice", "Fresh Cilantro", "Basmati / Jasmine Rice"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1515103296801756%2F&show_text=false&width=267&t=0",
+    "calories": 1510,
+    "protein": 64
   },
   {
-    name: "Tadka Daal",
-    link: "https://www.facebook.com/reel/1474470550787922",
-    tags: ["Red Lentils", "Lentils", "Curry"],
-    ingredients: ["400g Red Lentils", "1.5l Boiling Water", "2-3 tbsp Blended Tomato", "Garam Masala", "Ground Coriander", "Salt", "Red Chilli", "Coriander", "For The Tadka:", "Onion", "Garlic", "Ginger", "Red / Green Chillies", "Cumin Seeds", "75g Butter"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1474470550787922%2F&show_text=false&width=267&t=0"
+    "name": "Tadka Daal",
+    "link": "https://www.facebook.com/reel/1474470550787922",
+    "tags": ["Red Lentils", "Lentils", "Curry"],
+    "ingredients": ["400g Red Lentils", "1.5l Boiling Water", "2-3 tbsp Blended Tomato", "Garam Masala", "Ground Coriander", "Salt", "Red Chilli", "Coriander", "For The Tadka:", "Onion", "Garlic", "Ginger", "Red / Green Chillies", "Cumin Seeds", "75g Butter"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1474470550787922%2F&show_text=false&width=267&t=0",
+    "calories": 2040,
+    "protein": 102
   },
   {
-    name: "Loaded Baked Sweet Potato",
-    link: "https://www.facebook.com/reel/1550086429389457",
-    tags: ["Sweet Potato", "Chickpeas"],
-    ingredients: ["For The Sweet Potatoes:", "4 Sweet Potatoes", "Olive Oil", "Salt", "For The Roasted Chickpeas:", "Chickpeas", "Olive Oil", "Salt", "Paprika", "Garlic Powder Optional", "For The Tahini Sauce:", "60ml Tahini", "Lemon Juice", "Salt & Pepper", "2-4 tbsp Water", "For The Topping:", "Baby Spinach", "Olives", "Sun-Dried Tomatoes"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1550086429389457%2F&show_text=false&width=267&t=0"
+    "name": "Loaded Baked Sweet Potato",
+    "link": "https://www.facebook.com/reel/1550086429389457",
+    "tags": ["Sweet Potato", "Chickpeas"],
+    "ingredients": ["For The Sweet Potatoes:", "4 Sweet Potatoes", "Olive Oil", "Salt", "For The Roasted Chickpeas:", "Chickpeas", "Olive Oil", "Salt", "Paprika", "Garlic Powder Optional", "For The Tahini Sauce:", "60ml Tahini", "Lemon Juice", "Salt & Pepper", "2-4 tbsp Water", "For The Topping:", "Baby Spinach", "Olives", "Sun-Dried Tomatoes"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1550086429389457%2F&show_text=false&width=267&t=0",
+    "calories": 1140,
+    "protein": 31
   },
   {
-    name: "Garlic Butter Melting Cabbage",
-    link: "https://www.facebook.com/reel/881748237838429",
-    tags: ["Cabbage"],
-    ingredients: ["Medium Cabbage", "Olive Oil", "Unsalted Butter", "1 Shallot", "Garlic Minced", "Vegetable Broth", "Heavy Cream", "Parmesan Cheese", "Chili Oil", "Dried Oregano", "Salt & Pepper", "Parsley"],
+    "name": "Garlic Butter Melting Cabbage",
+    "link": "https://www.facebook.com/reel/881748237838429",
+    "tags": ["Cabbage"],
+    "ingredients": ["Medium Cabbage", "Olive Oil", "Unsalted Butter", "1 Shallot", "Garlic Minced", "Vegetable Broth", "Heavy Cream", "Parmesan Cheese", "Chili Oil", "Dried Oregano", "Salt & Pepper", "Parsley"],
+    "calories": 590,
+    "protein": 16
   },
   {
-    name: "Chive Pesto & Feta Wreath",
-    link: "https://www.facebook.com/reel/1322592283011674",
-    tags: ["Pastry", "Bake"],
-    ingredients: ["Puff Pastry", "Pesto", "200g Feta Crumbled", "Sun Dried Tomatoes", "Garlic", "Egg For Brushing", "Sesame Seeds", "Honey", "Salt & Pepper"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1322592283011674%2F&show_text=false&width=267&t=0"
+    "name": "Chive Pesto & Feta Wreath",
+    "link": "https://www.facebook.com/reel/1322592283011674",
+    "tags": ["Pastry", "Bake"],
+    "ingredients": ["Puff Pastry", "Pesto", "200g Feta Crumbled", "Sun Dried Tomatoes", "Garlic", "Egg For Brushing", "Sesame Seeds", "Honey", "Salt & Pepper"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1322592283011674%2F&show_text=false&width=267&t=0",
+    "calories": 1890,
+    "protein": 48
   },
   {
-    name: "Creamy Onion Pasta",
-    link: "https://www.facebook.com/reel/1694838494732857",
-    tags: ["Pasta"],
-    ingredients: ["Pasta Of Choice", "Onions", "Olive Oil", "Butter", "Sugar", "Garlic", "For The Sauce:", "¾ Cup Oat Cream / Regular Cream", "Parmesan Cheese", "Chili Oil", "Smoked Paprika", "Onion Powder", "Garlic Powder", "Dried Oregano", "Sweet Paprika", "Salt & Pepper", "Parsley"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1694838494732857%2F&show_text=false&width=267&t=0"
+    "name": "Creamy Onion Pasta",
+    "link": "https://www.facebook.com/reel/1694838494732857",
+    "tags": ["Pasta"],
+    "ingredients": ["Pasta Of Choice", "Onions", "Olive Oil", "Butter", "Sugar", "Garlic", "For The Sauce:", "¾ Cup Oat Cream / Regular Cream", "Parmesan Cheese", "Chili Oil", "Smoked Paprika", "Onion Powder", "Garlic Powder", "Dried Oregano", "Sweet Paprika", "Salt & Pepper", "Parsley"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1694838494732857%2F&show_text=false&width=267&t=0",
+    "calories": 940,
+    "protein": 24
   },
   {
-    name: "Olive Appetizer",
-    link: "https://www.facebook.com/reel/1449751987159477",
-    tags: ["Apetizer"],
-    ingredients: ["For The Base;", "Onion", "Garlic", "Salt & Pepper", "Olive Oil", "Lemon Peel", "400 Grams Of Labne Cheese", "For The Top;", "3/4 Cup Green Olives", "3/4 Cup Black Olives", "Dried Tomatoes", "3/4 Cup Walnut", "1/4 Cup Pomegranate Vinegar"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1449751987159477%2F&show_text=false&width=267&t=0"
+    "name": "Olive Appetizer",
+    "link": "https://www.facebook.com/reel/1449751987159477",
+    "tags": ["Apetizer"],
+    "ingredients": ["For The Base;", "Onion", "Garlic", "Salt & Pepper", "Olive Oil", "Lemon Peel", "400 Grams Of Labne Cheese", "For The Top;", "3/4 Cup Green Olives", "3/4 Cup Black Olives", "Dried Tomatoes", "3/4 Cup Walnut", "1/4 Cup Pomegranate Vinegar"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1449751987159477%2F&show_text=false&width=267&t=0",
+    "calories": 1190,
+    "protein": 34
   },
   {
-    name: "Pesto Twists",
-    link: "https://www.facebook.com/reel/1491029399107996",
-    tags: ["Pastry", "Bake"],
-    ingredients: ["Puff Pastry", "Pesto", "Sun-Dried Tomato Pesto", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1491029399107996%2F&show_text=false&width=267&t=0"
+    "name": "Pesto Twists",
+    "link": "https://www.facebook.com/reel/1491029399107996",
+    "tags": ["Pastry", "Bake"],
+    "ingredients": ["Puff Pastry", "Pesto", "Sun-Dried Tomato Pesto", "1 Egg Yolk", "1 tbsp Milk", "Sesame Seeds"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1491029399107996%2F&show_text=false&width=267&t=0",
+    "calories": 1640,
+    "protein": 28
   },
   {
-    name: "Baked Mozzarella Aubergine",
-    link: "https://www.facebook.com/reel/1088724090105973",
-    tags: ["Aubergine"],
-    ingredients: ["Aubergine", "Olive Oil", "Garlic", "Oregano", "Paprika", "Salt & Pepper", "For The Sauce:", "Garlic", "Canned Tomatoes", "Basil", "Oregano", "Salt & Pepper", "Sugar", "Mozzarella", "Parmesan"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1088724090105973%2F&show_text=false&width=267&t=0"
+    "name": "Baked Mozzarella Aubergine",
+    "link": "https://www.facebook.com/reel/1088724090105973",
+    "tags": ["Aubergine"],
+    "ingredients": ["Aubergine", "Olive Oil", "Garlic", "Oregano", "Paprika", "Salt & Pepper", "For The Sauce:", "Garlic", "Canned Tomatoes", "Basil", "Oregano", "Salt & Pepper", "Sugar", "Mozzarella", "Parmesan"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1088724090105973%2F&show_text=false&width=267&t=0",
+    "calories": 510,
+    "protein": 26
   },
   {
-    name: "Feta Stuffed Peppers",
-    link: "https://www.facebook.com/reel/4463778750612060",
-    tags: ["Red Peppers"],
-    ingredients: ["4 Red Peppers", "200 G Feta Cheese", "2 Eggs", "3 Spring Onions", "Parsley", "Garlic", "Black Pepper", "Chili Flakes", "Mozzarella"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4463778750612060%2F&show_text=false&width=267&t=0"
+    "name": "Feta Stuffed Peppers",
+    "link": "https://www.facebook.com/reel/4463778750612060",
+    "tags": ["Red Peppers"],
+    "ingredients": ["4 Red Peppers", "200 G Feta Cheese", "2 Eggs", "3 Spring Onions", "Parsley", "Garlic", "Black Pepper", "Chili Flakes", "Mozzarella"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4463778750612060%2F&show_text=false&width=267&t=0",
+    "calories": 860,
+    "protein": 54
   },
   {
-    name: "Chickpea & Aubergine Salad",
-    link: "https://www.facebook.com/reel/784625543816540",
-    tags: ["Chickpeas", "Aubergine"],
-    ingredients: ["Chickpeas", "Aubergines", "Cherry Tomatoes", "Garlic", "Salt", "Olive Oil", "Thyme", "Parsley", "Mint", "Basil", "White Wine Vinegar", "140g Feta Cheese"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F784625543816540%2F&show_text=false&width=267&t=0"
+    "name": "Chickpea & Aubergine Salad",
+    "link": "https://www.facebook.com/reel/784625543816540",
+    "tags": ["Chickpeas", "Aubergine"],
+    "ingredients": ["Chickpeas", "Aubergines", "Cherry Tomatoes", "Garlic", "Salt", "Olive Oil", "Thyme", "Parsley", "Mint", "Basil", "White Wine Vinegar", "140g Feta Cheese"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F784625543816540%2F&show_text=false&width=267&t=0",
+    "calories": 880,
+    "protein": 38
   },
   {
-    name: "Beans & Sausage Stew",
-    link: "https://www.facebook.com/watch/?v=1834593933646837&rdid=6rE2RSc8RlP9OJSU",
-    tags: ["Cannellini Beans", "Beans"],
-    ingredients: ["Cannellini Beans", "Onion", "Chili Pepper / Red Pepper Flakes", "Olive Oil", "1 Tbsp Tomato Paste", "Bay Leaf", "Cherry Tomatoes", "Sausage", "White Wine", "Salt", "Parsley"],
+    "name": "Beans & Sausage Stew",
+    "link": "https://www.facebook.com/watch/?v=1834593933646837&rdid=6rE2RSc8RlP9OJSU",
+    "tags": ["Cannellini Beans", "Beans"],
+    "ingredients": ["Cannellini Beans", "Onion", "Chili Pepper / Red Pepper Flakes", "Olive Oil", "1 Tbsp Tomato Paste", "Bay Leaf", "Cherry Tomatoes", "Sausage", "White Wine", "Salt", "Parsley"],
+    "calories": 960,
+    "protein": 48
   },
   {
-    name: "Pasta Roasted Pepper & Tomato Sauce",
-    link: "https://www.facebook.com/reel/241109021827620",
-    tags: ["Pasta", "Bell Pepper"],
-    ingredients: ["Pasta", "Cherry Tomatoes", "Bell Pepper", "Onion", "Garlic", "Fresh Basil", "Oregano", "1/2 Cup Ricotta / Cream Cheese", "1/4 Cup Parmesan", "Salt & Pepper", "Chili Flakes", "Olive Oil", "Pasta Water"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F241109021827620%2F&show_text=false&width=267&t=0"
+    "name": "Pasta Roasted Pepper & Tomato Sauce",
+    "link": "https://www.facebook.com/reel/241109021827620",
+    "tags": ["Pasta", "Bell Pepper"],
+    "ingredients": ["Pasta", "Cherry Tomatoes", "Bell Pepper", "Onion", "Garlic", "Fresh Basil", "Oregano", "1/2 Cup Ricotta / Cream Cheese", "1/4 Cup Parmesan", "Salt & Pepper", "Chili Flakes", "Olive Oil", "Pasta Water"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F241109021827620%2F&show_text=false&width=267&t=0",
+    "calories": 1040,
+    "protein": 38
   },
   {
-    name: "Creamy Olive Pasta",
-    link: "https://www.facebook.com/reel/1474610023109124",
-    tags: ["Pasta"],
-    ingredients: ["Pasta", "Cream Cheese", "Tomato Paste", "Olives", "Parsley", "Basil", "Grated Parmesan Cheese", "Salt", "Olive Oil", "Lemon Zest"],
-    embedUrl: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1474610023109124%2F&show_text=false&width=267&t=0"
+    "name": "Creamy Olive Pasta",
+    "link": "https://www.facebook.com/reel/1474610023109124",
+    "tags": ["Pasta"],
+    "ingredients": ["Pasta", "Cream Cheese", "Tomato Paste", "Olives", "Parsley", "Basil", "Grated Parmesan Cheese", "Salt", "Olive Oil", "Lemon Zest"],
+    "embedUrl": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1474610023109124%2F&show_text=false&width=267&t=0",
+    "calories": 895,
+    "protein": 28
   },
   {
-    name: "Rajma Chawal Curry",
-    link: "https://www.facebook.com/watch/?v=1659367317836042&rdid=YvX1fJ1WEj2X1O77",
-    tags: ["Kidney Beans", "Curry", "Beans"],
-    ingredients: ["150g Kidney Beans", "Bay Leaf", "Cardamom Pods", "Salt", "5 Cup Water", "1 tbsp Ghee", "Cumin", "Cinnamon Stick", "Garlic", "Onions", "Ginger Paste", "Chilli", "Can Diced Tomatoes", "Turmeric", "Red Chilli Powder", "Coriander Powder", "Cumin Powder", "Garam Masala", "Salt", "Kasuri Methi", "Coriander", "Rice And Naan To Serve"],
+    "name": "Rajma Chawal Curry",
+    "link": "https://www.facebook.com/watch/?v=1659367317836042&rdid=YvX1fJ1WEj2X1O77",
+    "tags": ["Kidney Beans", "Curry", "Beans"],
+    "ingredients": ["150g Kidney Beans", "Bay Leaf", "Cardamom Pods", "Salt", "5 Cup Water", "1 tbsp Ghee", "Cumin", "Cinnamon Stick", "Garlic", "Onions", "Ginger Paste", "Chilli", "Can Diced Tomatoes", "Turmeric", "Red Chilli Powder", "Coriander Powder", "Cumin Powder", "Garam Masala", "Salt", "Kasuri Methi", "Coriander", "Rice And Naan To Serve"],
+    "calories": 790,
+    "protein": 36
   },
   {
-    name: "Chickpea & Spinach Curry",
-    link: "https://www.facebook.com/healthylivingjames/posts/pfbid0NzoxvSRJDtciU46D4p21oAU9o8G48To41dwN6uVEDgKDuiEeh3U3CKLe3afybz3jl",
-    tags: ["Chickpeas", "Spinach", "Curry"],
-    ingredients: ["Olive Oil⁣⁣", "Garlic", "Onion", "Paprika⁣⁣ Powder", "Cayenne Pepper⁣ ⁣", "Ground Coriander⁣⁣", "Chilli Flakes⁣⁣", "Tomato Puree⁣⁣", "2 Cans Chickpeas", "200ml Veg Stock⁣⁣", "Can Coconut Milk ⁣⁣", "60g Ground Almonds", "200g Spinach⁣⁣"],
+    "name": "Chickpea & Spinach Curry",
+    "link": "https://www.facebook.com/healthylivingjames/posts/pfbid0NzoxvSRJDtciU46D4p21oAU9o8G48To41dwN6uVEDgKDuiEeh3U3CKLe3afybz3jl",
+    "tags": ["Chickpeas", "Spinach", "Curry"],
+    "ingredients": ["Olive Oil⁣⁣", "Garlic", "Onion", "Paprika⁣⁣ Powder", "Cayenne Pepper⁣ ⁣", "Ground Coriander⁣⁣", "Chilli Flakes⁣⁣", "Tomato Puree⁣⁣", "2 Cans Chickpeas", "200ml Veg Stock⁣⁣", "Can Coconut Milk ⁣⁣", "60g Ground Almonds", "200g Spinach⁣⁣"],
+    "calories": 1310,
+    "protein": 48
   },
   {
-    name: "Pasta & Beans",
-    link: "https://www.facebook.com/Chefincamicia/videos/1102939213517848/",
-    tags: ["Pasta", "Carrots", "Beans"],
-    ingredients: ["250g Mixed Pasta", "Celery", "Carrot", "Onion", "Chili Powder", "Tomato Paste", "Butter", "Marjoram", "Rosemary", "Bay Leaf", "500ml Vegetable Stock", "300g Dried Red Beans", "Olive Oil", "Smoked Scamorza Cheese", "Black Pepper"],
+    "name": "Pasta & Beans",
+    "link": "https://www.facebook.com/Chefincamicia/videos/1102939213517848/",
+    "tags": ["Pasta", "Carrots", "Beans"],
+    "ingredients": ["250g Mixed Pasta", "Celery", "Carrot", "Onion", "Chili Powder", "Tomato Paste", "Butter", "Marjoram", "Rosemary", "Bay Leaf", "500ml Vegetable Stock", "300g Dried Red Beans", "Olive Oil", "Smoked Scamorza Cheese", "Black Pepper"],
+    "calories": 1990,
+    "protein": 92
   },
   {
-    name: "Lentil Bolognese",
-    link: "https://www.facebook.com/watch/?v=779391129484967&rdid=0BeNaJmaM3pvZAQ9",
-    tags: ["Carrots", "Green Lentils", "Lentils", "Zucchini"],
-    ingredients: ["2 Carrots", "Onion", "Celery", "Garlic", "100g Raw Walnut", "Olive Oil", "Dried Basil", "Dried Oregano", "Dried Parsley", "Salt", "Tomato Paste", "660ml Vegetable Broth", "200g Green Lentil", "Can Diced Tomato", "120ml Red Wine", "Noodle", "6 Medium Zucchinis", "Red Pepper Flakes"],
+    "name": "Lentil Bolognese",
+    "link": "https://www.facebook.com/watch/?v=779391129484967&rdid=0BeNaJmaM3pvZAQ9",
+    "tags": ["Carrots", "Green Lentils", "Lentils", "Zucchini"],
+    "ingredients": ["2 Carrots", "Onion", "Celery", "Garlic", "100g Raw Walnut", "Olive Oil", "Dried Basil", "Dried Oregano", "Dried Parsley", "Salt", "Tomato Paste", "660ml Vegetable Broth", "200g Green Lentil", "Can Diced Tomato", "120ml Red Wine", "Noodle", "6 Medium Zucchinis", "Red Pepper Flakes"],
+    "calories": 1740,
+    "protein": 72
   }
-];
+]
